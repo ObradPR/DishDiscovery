@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --light-green: rgb(86, 204, 157);
+  --light-red: rgb(243, 150, 154);
+  --box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+hr.section-title {
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    var(--light-red),
+    rgba(0, 0, 0, 0)
+  );
+  width: 50%;
+  margin: 0 auto;
+}
+
+.green-text {
+  color: var(--light-green);
+}

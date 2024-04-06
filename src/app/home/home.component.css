@@ -1,5 +1,9 @@
+#cover {
+  padding: 0;
+}
+
 #cover img {
-  max-height: 94dvh;
+  max-height: 100dvh;
   background-size: contain;
 }
 
@@ -9,7 +13,7 @@
   right: 0;
   width: 45%;
   transform: translate(-50%, 50%);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: var(--bs-border-radius);
   padding: 0.6rem 1rem;
@@ -24,4 +28,62 @@
   margin-top: 1.2rem;
   color: var(--bs-white);
   font-size: 1.1em;
+}
+
+.about-us-section-info {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.about-us-section-info p {
+  font-size: 1.2em;
+  margin-bottom: 1.8rem;
+}
+
+.about-us-section-info p:nth-child(1),
+.about-us-section-info p:nth-child(2),
+.about-us-section-info p:nth-child(3) {
+  width: 45%;
+}
+
+.about-us-section-info p:nth-child(4),
+.about-us-section-info p:nth-child(5) {
+  width: 75%;
+}
+
+.about-us-btn {
+  margin-top: 1rem;
+}
+
+.about-us-section-img-holder {
+  position: absolute;
+  z-index: -1;
+}
+
+.about-us-section-img-1 {
+  width: 100%;
+  top: 0;
+  right: 13%;
+  text-align: end;
+}
+
+.about-us-section-img-1 img {
+  width: 40%;
+  border-radius: var(--bs-border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.about-us-section-img-2 {
+  text-align: end;
+  top: 30%;
+  right: 2%;
+  width: 100%;
+}
+
+.about-us-section-img-2 img {
+  width: 20%;
+  border-radius: var(--bs-border-radius);
+  box-shadow: var(--box-shadow);
 }

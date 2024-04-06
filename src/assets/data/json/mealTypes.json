@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Breakfast",
+    "description": "Start your day with these delicious breakfast recipes.",
+    "image": "breakfast.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lunch",
+    "description": "Quick and satisfying lunch ideas for busy days.",
+    "image": "lunch.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dinner",
+    "description": "Family-friendly dinner recipes for every night of the week.",
+    "image": "dinner.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Desserts",
+    "description": "Indulgent desserts to satisfy your sweet tooth.",
+    "image": "desserts.jpg"
+  }
+]

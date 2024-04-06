@@ -1,0 +1,585 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Spaghetti Bolognese",
+    "categories": [101, 1, 5],
+    "meal_type": 3,
+    "description": "A hearty and flavorful spaghetti dish with rich Bolognese sauce.",
+    "image": "spaghetti_bolognese.jpg",
+    "cooking_time": "45 minutes",
+    "servings": 4,
+    "difficulty": "Medium",
+    "dietary_info": {
+      "gluten_free": false,
+      "dairy_free": false,
+      "vegetarian": false,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Spaghetti",
+        "quantity": "300g"
+      },
+      {
+        "name": "Ground beef",
+        "quantity": "500g"
+      },
+      {
+        "name": "Onion, chopped",
+        "quantity": "1"
+      },
+      {
+        "name": "Garlic cloves, minced",
+        "quantity": "2"
+      },
+      {
+        "name": "Canned tomatoes",
+        "quantity": "400g"
+      },
+      {
+        "name": "Tomato paste",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Dried oregano",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": "To taste"
+      },
+      {
+        "name": "Grated Parmesan cheese",
+        "quantity": "For serving"
+      }
+    ],
+    "instructions": [
+      "Cook spaghetti according to package instructions.",
+      "In a large skillet, brown ground beef over medium heat.",
+      "Add chopped onion and minced garlic, cook until softened.",
+      "Stir in canned tomatoes, tomato paste, and dried oregano. Season with salt and pepper.",
+      "Simmer sauce for 20-30 minutes, until thickened.",
+      "Serve Bolognese sauce over cooked spaghetti, garnished with grated Parmesan cheese."
+    ],
+    "nutrition": {
+      "calories": 480,
+      "protein": 25,
+      "carbohydrates": 45,
+      "fat": 20,
+      "fiber": 5
+    },
+    "ratings": [
+      {
+        "user": "john_doe",
+        "rating": 4,
+        "comment": "Delicious! Reminds me of my trip to Italy."
+      },
+      {
+        "user": "foodie_girl",
+        "rating": 5,
+        "comment": "The best spaghetti Bolognese I've ever tasted!"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Grilled Lemon Herb Chicken",
+    "categories": [201, 2],
+    "meal_type": 2,
+    "description": "Juicy and flavorful chicken marinated in lemon and herbs, perfect for grilling.",
+    "image": "lemon_herb_chicken.jpg",
+    "cooking_time": "30 minutes",
+    "servings": 4,
+    "difficulty": "Easy",
+    "dietary_info": {
+      "gluten_free": true,
+      "dairy_free": true,
+      "vegetarian": false,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Boneless, skinless chicken breasts",
+        "quantity": "4"
+      },
+      {
+        "name": "Lemons, juiced and zested",
+        "quantity": "2"
+      },
+      {
+        "name": "Garlic cloves, minced",
+        "quantity": "2"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Dried thyme",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Dried rosemary",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": "To taste"
+      }
+    ],
+    "instructions": [
+      "In a bowl, whisk together lemon juice, lemon zest, minced garlic, olive oil, thyme, rosemary, salt, and pepper.",
+      "Add chicken breasts to the marinade, coat well, and refrigerate for at least 1 hour.",
+      "Preheat grill to medium-high heat.",
+      "Grill chicken breasts for 6-8 minutes per side, or until cooked through and grill marks appear.",
+      "Serve grilled chicken with your favorite sides and enjoy!"
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 30,
+      "carbohydrates": 5,
+      "fat": 15,
+      "fiber": 1
+    },
+    "ratings": [
+      {
+        "user": "mary_smith",
+        "rating": 5,
+        "comment": "So easy to make and incredibly delicious!"
+      },
+      {
+        "user": "chef_mike",
+        "rating": 4,
+        "comment": "Great flavor combination. Definitely grilling this again!"
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Creamy Chicken Alfredo",
+    "categories": [102, 1, 2],
+    "meal_type": 3,
+    "description": "A classic creamy pasta dish with tender chicken and rich Alfredo sauce.",
+    "image": "creamy_chicken_alfredo.jpg",
+    "cooking_time": "30 minutes",
+    "servings": 4,
+    "difficulty": "Medium",
+    "dietary_info": {
+      "gluten_free": false,
+      "dairy_free": false,
+      "vegetarian": false,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Fettuccine pasta",
+        "quantity": "300g"
+      },
+      {
+        "name": "Chicken breast, diced",
+        "quantity": "500g"
+      },
+      {
+        "name": "Heavy cream",
+        "quantity": "1 cup"
+      },
+      {
+        "name": "Parmesan cheese, grated",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Garlic, minced",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Butter",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": "To taste"
+      }
+    ],
+    "instructions": [
+      "Cook fettuccine according to package instructions.",
+      "In a skillet, cook diced chicken until browned and cooked through. Set aside.",
+      "In the same skillet, melt butter and sauté minced garlic until fragrant.",
+      "Add heavy cream and grated Parmesan cheese, stirring until smooth and creamy.",
+      "Season with salt and pepper to taste.",
+      "Add cooked chicken and drained fettuccine to the sauce, tossing until well coated.",
+      "Serve hot, garnished with additional Parmesan cheese if desired."
+    ],
+    "nutrition": {
+      "calories": 550,
+      "protein": 35,
+      "carbohydrates": 45,
+      "fat": 25,
+      "fiber": 2
+    },
+    "ratings": [
+      {
+        "user": "sara_cooks",
+        "rating": 4,
+        "comment": "Creamy and delicious! Loved it."
+      },
+      {
+        "user": "foodie_guy",
+        "rating": 5,
+        "comment": "One of the best chicken Alfredos I've ever had."
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Lemon Garlic Roast Chicken",
+    "categories": [202, 2],
+    "meal_type": 3,
+    "description": "A flavorful and juicy roast chicken with zesty lemon and aromatic garlic.",
+    "image": "lemon_garlic_roast_chicken.jpg",
+    "cooking_time": "1 hour 30 minutes",
+    "servings": 6,
+    "difficulty": "Easy",
+    "dietary_info": {
+      "gluten_free": true,
+      "dairy_free": true,
+      "vegetarian": false,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Whole chicken",
+        "quantity": "1 (about 1.5kg)"
+      },
+      {
+        "name": "Lemons, sliced",
+        "quantity": "2"
+      },
+      {
+        "name": "Garlic cloves, minced",
+        "quantity": "4"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Fresh thyme sprigs",
+        "quantity": "4"
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": "To taste"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 200°C (400°F).",
+      "Rub the chicken with olive oil and season generously with salt and pepper.",
+      "Stuff the cavity of the chicken with sliced lemons, minced garlic, and fresh thyme sprigs.",
+      "Place the chicken in a roasting pan and roast in the preheated oven for about 1 hour and 30 minutes, or until the internal temperature reaches 75°C (165°F) and the skin is golden brown and crispy.",
+      "Remove from oven and let rest for 10 minutes before carving.",
+      "Serve hot with your favorite side dishes."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 30,
+      "carbohydrates": 2,
+      "fat": 18,
+      "fiber": 1
+    },
+    "ratings": [
+      {
+        "user": "james_foodie",
+        "rating": 5,
+        "comment": "Absolutely delicious! The lemon garlic flavor is perfect."
+      },
+      {
+        "user": "natalie_chef",
+        "rating": 4,
+        "comment": "Simple and tasty. Loved it with roasted vegetables."
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 5,
+    "title": "Greek Salad with Feta and Olives",
+    "categories": [301, 3],
+    "meal_type": 2,
+    "description": "A refreshing and colorful Greek salad with crisp vegetables, tangy feta cheese, and briny olives.",
+    "image": "greek_salad.jpg",
+    "cooking_time": "15 minutes",
+    "servings": 4,
+    "difficulty": "Easy",
+    "dietary_info": {
+      "gluten_free": true,
+      "dairy_free": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Romaine lettuce, chopped",
+        "quantity": "1 head"
+      },
+      {
+        "name": "Cucumber, diced",
+        "quantity": "1"
+      },
+      {
+        "name": "Tomatoes, diced",
+        "quantity": "2"
+      },
+      {
+        "name": "Red onion, thinly sliced",
+        "quantity": "1/2"
+      },
+      {
+        "name": "Kalamata olives",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Feta cheese, crumbled",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Extra virgin olive oil",
+        "quantity": "3 tbsp"
+      },
+      {
+        "name": "Red wine vinegar",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Dried oregano",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Salt and pepper",
+        "quantity": "To taste"
+      }
+    ],
+    "instructions": [
+      "In a large bowl, combine chopped romaine lettuce, diced cucumber, diced tomatoes, thinly sliced red onion, Kalamata olives, and crumbled feta cheese.",
+      "In a small bowl, whisk together extra virgin olive oil, red wine vinegar, dried oregano, salt, and pepper.",
+      "Drizzle the dressing over the salad and toss gently to coat.",
+      "Serve immediately, garnished with additional feta cheese if desired."
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbohydrates": 8,
+      "fat": 14,
+      "fiber": 3
+    },
+    "ratings": [
+      {
+        "user": "lisa_foodlover",
+        "rating": 5,
+        "comment": "Love the combination of flavors! A perfect summer salad."
+      },
+      {
+        "user": "david_saladfan",
+        "rating": 4,
+        "comment": "Simple yet delicious. The feta and olives really make it."
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 6,
+    "title": "Chocolate Fudge Cake",
+    "categories": [401, 4],
+    "meal_type": 4,
+    "description": "A rich and decadent chocolate cake with luscious fudge frosting.",
+    "image": "chocolate_fudge_cake.jpg",
+    "cooking_time": "1 hour",
+    "servings": 10,
+    "difficulty": "Medium",
+    "dietary_info": {
+      "gluten_free": false,
+      "dairy_free": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "All-purpose flour",
+        "quantity": "1 3/4 cups"
+      },
+      {
+        "name": "Granulated sugar",
+        "quantity": "2 cups"
+      },
+      {
+        "name": "Cocoa powder",
+        "quantity": "3/4 cup"
+      },
+      {
+        "name": "Baking powder",
+        "quantity": "1 1/2 tsp"
+      },
+      {
+        "name": "Baking soda",
+        "quantity": "1 1/2 tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Eggs",
+        "quantity": "2"
+      },
+      {
+        "name": "Milk",
+        "quantity": "1 cup"
+      },
+      {
+        "name": "Vegetable oil",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Vanilla extract",
+        "quantity": "2 tsp"
+      },
+      {
+        "name": "Boiling water",
+        "quantity": "1 cup"
+      },
+      {
+        "name": "Butter",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Powdered sugar",
+        "quantity": "2 cups"
+      },
+      {
+        "name": "Cocoa powder",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Milk",
+        "quantity": "1/4 cup"
+      },
+      {
+        "name": "Vanilla extract",
+        "quantity": "1 tsp"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 180°C (350°F). Grease and flour two 9-inch round cake pans.",
+      "In a large bowl, sift together all-purpose flour, granulated sugar, cocoa powder, baking powder, baking soda, and salt.",
+      "Add eggs, milk, vegetable oil, and vanilla extract. Beat on medium speed for 2 minutes.",
+      "Stir in boiling water. Batter will be thin.",
+      "Pour batter evenly into prepared cake pans.",
+      "Bake for 30 to 35 minutes, or until a toothpick inserted into the center comes out clean.",
+      "Cool in pans for 10 minutes, then remove from pans and cool completely on wire racks.",
+      "For the frosting, beat butter until creamy. Gradually add powdered sugar and cocoa powder, alternating with milk and vanilla extract.",
+      "Beat until smooth and spreadable. If too thick, add more milk. If too thin, add more powdered sugar.",
+      "Frost the cooled cakes and stack them on top of each other. Frost the top and sides of the cake.",
+      "Slice and serve. Enjoy!"
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 4,
+      "carbohydrates": 60,
+      "fat": 16,
+      "fiber": 2
+    },
+    "ratings": [
+      {
+        "user": "megan_chocolate",
+        "rating": 5,
+        "comment": "This cake is heaven for chocolate lovers! So moist and fudgy."
+      },
+      {
+        "user": "steve_baker",
+        "rating": 4,
+        "comment": "Decadent and delicious! Perfect for special occasions."
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Oreo Cheesecake",
+    "categories": [401, 4],
+    "meal_type": 4,
+    "description": "A creamy and indulgent cheesecake with chunks of Oreo cookies in every bite.",
+    "image": "oreo_cheesecake.jpg",
+    "cooking_time": "1 hour 15 minutes",
+    "servings": 12,
+    "difficulty": "Medium",
+    "dietary_info": {
+      "gluten_free": false,
+      "dairy_free": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Oreo cookies",
+        "quantity": "24"
+      },
+      {
+        "name": "Cream cheese, softened",
+        "quantity": "680g"
+      },
+      {
+        "name": "Granulated sugar",
+        "quantity": "3/4 cup"
+      },
+      {
+        "name": "Sour cream",
+        "quantity": "1 cup"
+      },
+      {
+        "name": "Vanilla extract",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Eggs",
+        "quantity": "3"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 160°C (325°F). Grease and line the bottom of a 9-inch springform pan with parchment paper.",
+      "Place Oreo cookies in a ziplock bag and crush them into fine crumbs using a rolling pin.",
+      "Press the crumbs into the bottom of the prepared pan to form the crust.",
+      "In a large bowl, beat cream cheese and granulated sugar until smooth and creamy.",
+      "Add sour cream and vanilla extract, and beat until well combined.",
+      "Add eggs, one at a time, beating well after each addition.",
+      "Fold in chopped Oreo cookies.",
+      "Pour the batter over the prepared crust and smooth the top with a spatula.",
+      "Bake for 1 hour and 15 minutes, or until the edges are set and the center is slightly jiggly.",
+      "Turn off the oven and let the cheesecake cool in the oven with the door slightly ajar for 1 hour.",
+      "Remove from the oven and let cool completely on a wire rack.",
+      "Chill in the refrigerator for at least 4 hours, or overnight, before serving.",
+      "Slice and enjoy!"
+    ],
+    "nutrition": {
+      "calories": 450,
+      "protein": 8,
+      "carbohydrates": 40,
+      "fat": 30,
+      "fiber": 1
+    },
+    "ratings": [
+      {
+        "user": "olivia_cakes",
+        "rating": 5,
+        "comment": "Amazing cheesecake! The Oreos add a delightful crunch."
+      },
+      {
+        "user": "alex_baker",
+        "rating": 4,
+        "comment": "Creamy and delicious! A crowd-pleaser for sure."
+      }
+    ],
+    "featured": true
+  }
+]

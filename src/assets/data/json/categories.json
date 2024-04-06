@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "name": "Pasta",
+    "description": "Delicious pasta dishes from around the world.",
+    "image": "Pasta.jpg",
+    "subcategories": [
+      {
+        "id": 101,
+        "name": "Spaghetti",
+        "description": "Classic spaghetti dishes with various sauces.",
+        "image": "Spaghetti.jpeg"
+      },
+      {
+        "id": 102,
+        "name": "Penne",
+        "description": "Penne pasta recipes featuring creamy and savory sauces.",
+        "image": "Penne.jpg"
+      },
+      {
+        "id": 103,
+        "name": "Lasagna",
+        "description": "Layers of pasta, cheese, and sauce in hearty lasagna recipes.",
+        "image": "Lasagna.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Chicken",
+    "description": "Delicious chicken dishes for any occasion.",
+    "image": "Chicken.webp",
+    "subcategories": [
+      {
+        "id": 201,
+        "name": "Grilled",
+        "description": "Juicy and flavorful grilled chicken recipes.",
+        "image": "Grilled-Chicken.jpg"
+      },
+      {
+        "id": 202,
+        "name": "Baked",
+        "description": "Tender and succulent baked chicken dishes.",
+        "image": "Baked-Chicken.jpg"
+      },
+      {
+        "id": 203,
+        "name": "Fried",
+        "description": "Crispy and delicious fried chicken recipes.",
+        "image": "Fried-Chicken.webp"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Salads",
+    "description": "Fresh and healthy salad recipes for every season.",
+    "image": "Salads.jpg",
+    "subcategories": [
+      {
+        "id": 301,
+        "name": "Green",
+        "description": "Leafy green salads with assorted veggies and dressings.",
+        "image": "Green-Salad.jpg"
+      },
+      {
+        "id": 302,
+        "name": "Pasta",
+        "description": "Pasta salads featuring fresh vegetables and flavorful dressings.",
+        "image": "Pasta-Salad.jpg"
+      },
+      {
+        "id": 303,
+        "name": "Fruit",
+        "description": "Sweet and refreshing fruit salads perfect for dessert or a light snack.",
+        "image": "Fruit-Salad.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Desserts",
+    "description": "Indulgent desserts to satisfy your sweet tooth.",
+    "image": "Desserts.jpg",
+    "subcategories": [
+      {
+        "id": 401,
+        "name": "Cakes",
+        "description": "Decadent cakes for birthdays, celebrations, or any sweet occasion.",
+        "image": "Cakes.jpg"
+      },
+      {
+        "id": 402,
+        "name": "Cookies",
+        "description": "Delicious cookies for snacking or gifting to loved ones.",
+        "image": "Cookies.jpg"
+      },
+      {
+        "id": 403,
+        "name": "Pies",
+        "description": "Flaky and flavorful pies with assorted fillings.",
+        "image": "Pies.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Beef",
+    "description": "Savory beef dishes for meat lovers.",
+    "image": "Beef.jpg",
+    "subcategories": [
+      {
+        "id": 501,
+        "name": "Steak",
+        "description": "Juicy and tender steak recipes cooked to perfection.",
+        "image": "Beef-Steak.jpg"
+      },
+      {
+        "id": 502,
+        "name": "Stir-Fry",
+        "description": "Quick and flavorful stir-fry dishes with beef and vegetables.",
+        "image": "Beef-Stir-Fry.jpg"
+      },
+      {
+        "id": 503,
+        "name": "Roast",
+        "description": "Hearty roast beef recipes for Sunday dinners and special occasions.",
+        "image": "Beef Roast.jpg"
+      }
+    ]
+  }
+]
