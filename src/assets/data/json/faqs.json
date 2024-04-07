@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "question": "How can I submit a recipe to your website?",
+    "answer": "To submit a recipe, you need to register an account on our website. Once logged in, you can navigate to the 'Upload Yours' page and follow the instructions to upload your recipe details, including ingredients, instructions, and photos."
+  },
+  {
+    "id": 2,
+    "question": "Can I edit or delete my submitted recipes?",
+    "answer": "Yes, you can edit or delete your submitted recipes. Simply log in to your account, go to the 'My Account --> My Recipes' section, and you will find options to edit or delete your recipes as needed."
+  },
+  {
+    "id": 3,
+    "question": "Are the recipes on your website verified for accuracy?",
+    "answer": "While we strive to provide accurate information, we do not verify the accuracy of each recipe submitted by users. We encourage users to read reviews and use their discretion when trying out recipes."
+  },
+  {
+    "id": 4,
+    "question": "How can I review a recipe?",
+    "answer": "To review a recipe, you don't need to be logged in to your account. Navigate to the recipe page you wish to review and click on the 'Write a Review' button. You can then provide your rating and feedback on the recipe."
+  },
+  {
+    "id": 5,
+    "question": "Is my personal information safe on your website?",
+    "answer": "We take the privacy and security of our users' personal information seriously. We employ various security measures to protect your data, as outlined in our Privacy Policy."
+  },
+  {
+    "id": 6,
+    "question": "Can I share recipes from your website on social media?",
+    "answer": "Yes, you can share recipes from our website on various social media platforms using the share buttons provided on each recipe page."
+  },
+  {
+    "id": 7,
+    "question": "How can I search for specific recipes on your website?",
+    "answer": "You can search for recipes using the search bar located at the top of every page. Simply enter keywords related to the recipe you're looking for, such as ingredients or dish name, and press enter to see relevant results."
+  },
+  {
+    "id": 8,
+    "question": "Are there dietary restrictions or filters available when searching for recipes?",
+    "answer": "Yes, you can use dietary filters to refine your recipe search. We offer options to filter recipes by dietary preferences such as vegetarian, vegan, gluten-free, and more."
+  },
+  {
+    "id": 9,
+    "question": "Can I save recipes to my account for later reference?",
+    "answer": "Yes, you can save recipes to your account by clicking on the 'Save Recipe' button on the recipe page. Saved recipes can be accessed later from your account dashboard."
+  },
+  {
+    "id": 10,
+    "question": "How can I report inappropriate or inaccurate recipes?",
+    "answer": "If you come across a recipe that is inappropriate or inaccurate, you can report it by clicking on the 'Report Recipe' button on the recipe page. Our team will review the report and take appropriate action."
+  },
+  {
+    "id": 11,
+    "question": "Are there community guidelines for interacting with other users?",
+    "answer": "Yes, we have community guidelines in place to ensure a positive and respectful environment for all users. Please review our community guidelines page for more information."
+  },
+  {
+    "id": 12,
+    "question": "Do you offer cooking tips or tutorials?",
+    "answer": "Yes, we provide cooking instructions on each recipe."
+  },
+  {
+    "id": 13,
+    "question": "How often are new recipes added to your website?",
+    "answer": "We regularly add new recipes to our website to keep our content fresh and diverse. Check back frequently or subscribe to our newsletter to stay updated on the latest additions."
+  },
+  {
+    "id": 14,
+    "question": "Can I share my own recipes on your website?",
+    "answer": "Yes, we welcome users to share their own recipes on our platform. Simply follow the submission guidelines to upload your recipes and share your culinary creations with the community."
+  },
+  {
+    "id": 15,
+    "question": "Do you have a mobile app available?",
+    "answer": "Yes, we have a mobile app available for both iOS and Android devices. You can download the app from the App Store or Google Play Store to access our recipes on the go."
+  }
+]

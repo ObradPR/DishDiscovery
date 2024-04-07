@@ -4,6 +4,7 @@
     "title": "Classic Spaghetti Bolognese",
     "categories": [101, 1, 5],
     "meal_type": 3,
+    "user_id": 1,
     "description": "A hearty and flavorful spaghetti dish with rich Bolognese sauce.",
     "image": "spaghetti_bolognese.jpg",
     "cooking_time": "45 minutes",
@@ -72,12 +73,14 @@
       {
         "user": "john_doe",
         "rating": 4,
-        "comment": "Delicious! Reminds me of my trip to Italy."
+        "comment": "Delicious! Reminds me of my trip to Italy.",
+        "rating_date": "2024-04-07T12:45:00Z"
       },
       {
         "user": "foodie_girl",
         "rating": 5,
-        "comment": "The best spaghetti Bolognese I've ever tasted!"
+        "comment": "The best spaghetti Bolognese I've ever tasted!",
+        "rating_date": "2024-02-14T09:30:00Z"
       }
     ],
     "featured": true
@@ -87,6 +90,7 @@
     "title": "Grilled Lemon Herb Chicken",
     "categories": [201, 2],
     "meal_type": 2,
+    "user_id": 1,
     "description": "Juicy and flavorful chicken marinated in lemon and herbs, perfect for grilling.",
     "image": "lemon_herb_chicken.jpg",
     "cooking_time": "30 minutes",
@@ -146,12 +150,14 @@
       {
         "user": "mary_smith",
         "rating": 5,
-        "comment": "So easy to make and incredibly delicious!"
+        "comment": "So easy to make and incredibly delicious!",
+        "rating_date": "2024-01-15T19:45:00Z"
       },
       {
         "user": "chef_mike",
         "rating": 4,
-        "comment": "Great flavor combination. Definitely grilling this again!"
+        "comment": "Great flavor combination. Definitely grilling this again!",
+        "rating_date": "2024-04-28T14:20:00Z"
       }
     ],
     "featured": false
@@ -161,6 +167,7 @@
     "title": "Creamy Chicken Alfredo",
     "categories": [102, 1, 2],
     "meal_type": 3,
+    "user_id": 2,
     "description": "A classic creamy pasta dish with tender chicken and rich Alfredo sauce.",
     "image": "creamy_chicken_alfredo.jpg",
     "cooking_time": "30 minutes",
@@ -222,12 +229,14 @@
       {
         "user": "sara_cooks",
         "rating": 4,
-        "comment": "Creamy and delicious! Loved it."
+        "comment": "Creamy and delicious! Loved it.",
+        "rating_date": "2024-03-18T08:15:00Z"
       },
       {
         "user": "foodie_guy",
         "rating": 5,
-        "comment": "One of the best chicken Alfredos I've ever had."
+        "comment": "One of the best chicken Alfredos I've ever had.",
+        "rating_date": "2024-02-03T13:10:00Z"
       }
     ],
     "featured": false
@@ -237,6 +246,7 @@
     "title": "Lemon Garlic Roast Chicken",
     "categories": [202, 2],
     "meal_type": 3,
+    "user_id": 3,
     "description": "A flavorful and juicy roast chicken with zesty lemon and aromatic garlic.",
     "image": "lemon_garlic_roast_chicken.jpg",
     "cooking_time": "1 hour 30 minutes",
@@ -293,12 +303,14 @@
       {
         "user": "james_foodie",
         "rating": 5,
-        "comment": "Absolutely delicious! The lemon garlic flavor is perfect."
+        "comment": "Absolutely delicious! The lemon garlic flavor is perfect.",
+        "rating_date": "2024-03-09T11:00:00Z"
       },
       {
         "user": "natalie_chef",
         "rating": 4,
-        "comment": "Simple and tasty. Loved it with roasted vegetables."
+        "comment": "Simple and tasty. Loved it with roasted vegetables.",
+        "rating_date": "2024-01-25T09:55:00Z"
       }
     ],
     "featured": true
@@ -308,6 +320,7 @@
     "title": "Greek Salad with Feta and Olives",
     "categories": [301, 3],
     "meal_type": 2,
+    "user_id": 4,
     "description": "A refreshing and colorful Greek salad with crisp vegetables, tangy feta cheese, and briny olives.",
     "image": "greek_salad.jpg",
     "cooking_time": "15 minutes",
@@ -378,12 +391,14 @@
       {
         "user": "lisa_foodlover",
         "rating": 5,
-        "comment": "Love the combination of flavors! A perfect summer salad."
+        "comment": "Love the combination of flavors! A perfect summer salad.",
+        "rating_date": "2024-02-10T17:30:00Z"
       },
       {
         "user": "david_saladfan",
         "rating": 4,
-        "comment": "Simple yet delicious. The feta and olives really make it."
+        "comment": "Simple yet delicious. The feta and olives really make it.",
+        "rating_date": "2024-03-31T16:55:00Z"
       }
     ],
     "featured": true
@@ -393,6 +408,7 @@
     "title": "Chocolate Fudge Cake",
     "categories": [401, 4],
     "meal_type": 4,
+    "user_id": 4,
     "description": "A rich and decadent chocolate cake with luscious fudge frosting.",
     "image": "chocolate_fudge_cake.jpg",
     "cooking_time": "1 hour",
@@ -494,12 +510,14 @@
       {
         "user": "megan_chocolate",
         "rating": 5,
-        "comment": "This cake is heaven for chocolate lovers! So moist and fudgy."
+        "comment": "This cake is heaven for chocolate lovers! So moist and fudgy.",
+        "rating_date": "2024-04-10T10:25:00Z"
       },
       {
         "user": "steve_baker",
         "rating": 4,
-        "comment": "Decadent and delicious! Perfect for special occasions."
+        "comment": "Decadent and delicious! Perfect for special occasions.",
+        "rating_date": "2024-01-08T08:40:00Z"
       }
     ],
     "featured": false
@@ -509,6 +527,7 @@
     "title": "Oreo Cheesecake",
     "categories": [401, 4],
     "meal_type": 4,
+    "user_id": 4,
     "description": "A creamy and indulgent cheesecake with chunks of Oreo cookies in every bite.",
     "image": "oreo_cheesecake.jpg",
     "cooking_time": "1 hour 15 minutes",
@@ -572,12 +591,478 @@
       {
         "user": "olivia_cakes",
         "rating": 5,
-        "comment": "Amazing cheesecake! The Oreos add a delightful crunch."
+        "comment": "Amazing cheesecake! The Oreos add a delightful crunch.",
+        "rating_date": "2024-02-22T19:00:00Z"
       },
       {
         "user": "alex_baker",
         "rating": 4,
-        "comment": "Creamy and delicious! A crowd-pleaser for sure."
+        "comment": "Creamy and delicious! A crowd-pleaser for sure.",
+        "rating_date": "2024-04-05T11:50:00Z"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 8,
+    "title": "Chocolate Chip Cookies",
+    "categories": [401, 2],
+    "meal_type": 2,
+    "user_id": 5,
+    "description": "Classic homemade chocolate chip cookies that are soft, chewy, and utterly delicious.",
+    "image": "chocolate_chip_cookies.jpg",
+    "cooking_time": "20 minutes",
+    "servings": 24,
+    "difficulty": "Easy",
+    "dietary_info": {
+      "gluten_free": false,
+      "dairy_free": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "All-purpose flour",
+        "quantity": "2 1/4 cups"
+      },
+      {
+        "name": "Baking soda",
+        "quantity": "1/2 tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "1/2 tsp"
+      },
+      {
+        "name": "Unsalted butter, softened",
+        "quantity": "1 cup"
+      },
+      {
+        "name": "Granulated sugar",
+        "quantity": "3/4 cup"
+      },
+      {
+        "name": "Brown sugar, packed",
+        "quantity": "3/4 cup"
+      },
+      {
+        "name": "Vanilla extract",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Eggs",
+        "quantity": "2"
+      },
+      {
+        "name": "Semisweet chocolate chips",
+        "quantity": "2 cups"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 190°C (375°F). Line baking sheets with parchment paper.",
+      "In a small bowl, whisk together flour, baking soda, and salt.",
+      "In a large bowl, cream together butter, granulated sugar, brown sugar, and vanilla extract until light and fluffy.",
+      "Beat in eggs one at a time.",
+      "Gradually add the flour mixture to the wet ingredients and mix until well combined.",
+      "Stir in chocolate chips.",
+      "Drop rounded tablespoons of dough onto prepared baking sheets.",
+      "Bake for 9-11 minutes or until golden brown.",
+      "Cool on baking sheets for 2 minutes before transferring to wire racks to cool completely.",
+      "Enjoy with a glass of milk!"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 2,
+      "carbohydrates": 24,
+      "fat": 9,
+      "fiber": 1
+    },
+    "ratings": [
+      {
+        "user": "baking_adventures",
+        "rating": 5,
+        "comment": "These cookies turned out perfect! So soft and chewy.",
+        "rating_date": "2024-03-15T10:15:00Z"
+      },
+      {
+        "user": "chocoholic",
+        "rating": 4,
+        "comment": "Delicious cookies, I couldn't stop eating them!",
+        "rating_date": "2024-01-30T15:35:00Z"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 9,
+    "title": "Caprese Salad",
+    "categories": [201, 3],
+    "meal_type": 3,
+    "user_id": 5,
+    "description": "A simple and refreshing Italian salad made with fresh tomatoes, mozzarella cheese, basil, and balsamic glaze.",
+    "image": "caprese_salad.jpg",
+    "cooking_time": "10 minutes",
+    "servings": 4,
+    "difficulty": "Easy",
+    "dietary_info": {
+      "gluten_free": true,
+      "dairy_free": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Tomatoes",
+        "quantity": "4"
+      },
+      {
+        "name": "Fresh mozzarella cheese",
+        "quantity": "8 oz"
+      },
+      {
+        "name": "Fresh basil leaves",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Extra virgin olive oil",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Balsamic glaze",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "To taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "To taste"
+      }
+    ],
+    "instructions": [
+      "Slice tomatoes and mozzarella cheese into 1/4-inch thick slices.",
+      "Arrange tomato and mozzarella slices on a serving platter, alternating them and overlapping slightly.",
+      "Tuck fresh basil leaves between the tomato and mozzarella slices.",
+      "Drizzle olive oil and balsamic glaze over the salad.",
+      "Season with salt and black pepper to taste.",
+      "Serve immediately and enjoy!"
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 12,
+      "carbohydrates": 6,
+      "fat": 18,
+      "fiber": 2
+    },
+    "ratings": [
+      {
+        "user": "foodie_nomad",
+        "rating": 5,
+        "comment": "Simple yet delicious! Perfect for a summer day.",
+        "rating_date": "2024-02-07T14:55:00Z"
+      },
+      {
+        "user": "fresh_foodie",
+        "rating": 4,
+        "comment": "Love the combination of flavors in this salad!",
+        "rating_date": "2024-04-23T11:45:00Z"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 10,
+    "title": "Spicy Thai Noodles",
+    "categories": [301, 4],
+    "meal_type": 4,
+    "user_id": 6,
+    "description": "A flavorful and spicy noodle dish inspired by Thai cuisine, packed with vegetables and herbs.",
+    "image": "spicy_thai_noodles.jpg",
+    "cooking_time": "30 minutes",
+    "servings": 4,
+    "difficulty": "Medium",
+    "dietary_info": {
+      "gluten_free": false,
+      "dairy_free": true,
+      "vegetarian": true,
+      "vegan": true
+    },
+    "ingredients": [
+      {
+        "name": "Rice noodles",
+        "quantity": "8 oz"
+      },
+      {
+        "name": "Vegetable oil",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Garlic, minced",
+        "quantity": "3 cloves"
+      },
+      {
+        "name": "Bell peppers, thinly sliced",
+        "quantity": "2"
+      },
+      {
+        "name": "Carrots, julienned",
+        "quantity": "2"
+      },
+      {
+        "name": "Broccoli florets",
+        "quantity": "1 cup"
+      },
+      {
+        "name": "Soy sauce",
+        "quantity": "1/4 cup"
+      },
+      {
+        "name": "Sriracha sauce",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Brown sugar",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Lime juice",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Peanuts, chopped (optional)",
+        "quantity": "For garnish"
+      },
+      {
+        "name": "Fresh cilantro, chopped (optional)",
+        "quantity": "For garnish"
+      }
+    ],
+    "instructions": [
+      "Cook rice noodles according to package instructions. Drain and set aside.",
+      "In a large skillet, heat vegetable oil over medium heat.",
+      "Add minced garlic and cook until fragrant, about 1 minute.",
+      "Add sliced bell peppers, julienned carrots, and broccoli florets. Stir-fry until vegetables are tender-crisp, about 5 minutes.",
+      "In a small bowl, whisk together soy sauce, sriracha sauce, brown sugar, and lime juice.",
+      "Add cooked noodles and sauce to the skillet with the vegetables. Toss until well combined and heated through.",
+      "Serve hot, garnished with chopped peanuts and fresh cilantro if desired.",
+      "Enjoy the spicy goodness!"
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 8,
+      "carbohydrates": 50,
+      "fat": 10,
+      "fiber": 6
+    },
+    "ratings": [
+      {
+        "user": "thai_food_lover",
+        "rating": 5,
+        "comment": "Absolutely delicious! Just like the ones I had in Thailand.",
+        "rating_date": "2024-03-26T17:20:00Z"
+      },
+      {
+        "user": "spicy_foodie",
+        "rating": 4,
+        "comment": "Perfect balance of heat and flavors!",
+        "rating_date": "2024-01-20T11:10:00Z"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 11,
+    "title": "Greek Salad",
+    "categories": [201, 3],
+    "meal_type": 3,
+    "user_id": 6,
+    "description": "A refreshing salad with crisp lettuce, juicy tomatoes, cucumber, olives, onions, and creamy feta cheese, tossed in a tangy vinaigrette.",
+    "image": "greek_salad.jpg",
+    "cooking_time": "15 minutes",
+    "servings": 4,
+    "difficulty": "Easy",
+    "dietary_info": {
+      "gluten_free": true,
+      "dairy_free": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Romaine lettuce, chopped",
+        "quantity": "1 head"
+      },
+      {
+        "name": "Tomatoes, diced",
+        "quantity": "2"
+      },
+      {
+        "name": "Cucumber, sliced",
+        "quantity": "1"
+      },
+      {
+        "name": "Red onion, thinly sliced",
+        "quantity": "1/2"
+      },
+      {
+        "name": "Kalamata olives, pitted",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Feta cheese, crumbled",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Extra virgin olive oil",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Red wine vinegar",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Dried oregano",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "To taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "To taste"
+      }
+    ],
+    "instructions": [
+      "In a large bowl, combine chopped romaine lettuce, diced tomatoes, sliced cucumber, thinly sliced red onion, pitted Kalamata olives, and crumbled feta cheese.",
+      "In a small bowl, whisk together extra virgin olive oil, red wine vinegar, dried oregano, salt, and black pepper to make the vinaigrette.",
+      "Pour the vinaigrette over the salad and toss until well combined.",
+      "Serve immediately and enjoy the refreshing flavors of Greece!"
+    ],
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbohydrates": 10,
+      "fat": 14,
+      "fiber": 4
+    },
+    "ratings": [
+      {
+        "user": "mediterranean_foodie",
+        "rating": 5,
+        "comment": "This salad is so fresh and delicious! Perfect for a summer day.",
+        "rating_date": "2024-03-05T12:00:00Z"
+      },
+      {
+        "user": "healthy_eats",
+        "rating": 4,
+        "comment": "Love the combination of flavors in this salad!",
+        "rating_date": "2024-01-05T10:30:00Z"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": 12,
+    "title": "Mushroom Risotto",
+    "categories": [301, 1],
+    "meal_type": 1,
+    "user_id": 6,
+    "description": "A creamy and comforting risotto packed with earthy mushrooms and flavored with garlic, white wine, and Parmesan cheese.",
+    "image": "mushroom_risotto.jpg",
+    "cooking_time": "40 minutes",
+    "servings": 4,
+    "difficulty": "Medium",
+    "dietary_info": {
+      "gluten_free": false,
+      "dairy_free": false,
+      "vegetarian": true,
+      "vegan": false
+    },
+    "ingredients": [
+      {
+        "name": "Arborio rice",
+        "quantity": "1 cup"
+      },
+      {
+        "name": "Vegetable broth",
+        "quantity": "4 cups"
+      },
+      {
+        "name": "Olive oil",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Butter",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Yellow onion, finely chopped",
+        "quantity": "1"
+      },
+      {
+        "name": "Garlic, minced",
+        "quantity": "2 cloves"
+      },
+      {
+        "name": "Cremini mushrooms, sliced",
+        "quantity": "8 oz"
+      },
+      {
+        "name": "White wine",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Parmesan cheese, grated",
+        "quantity": "1/2 cup"
+      },
+      {
+        "name": "Fresh parsley, chopped",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": "To taste"
+      },
+      {
+        "name": "Black pepper",
+        "quantity": "To taste"
+      }
+    ],
+    "instructions": [
+      "In a saucepan, heat vegetable broth over medium heat and keep it warm.",
+      "In a large skillet, heat olive oil and butter over medium heat.",
+      "Add finely chopped onion and minced garlic. Cook until softened, about 3-4 minutes.",
+      "Add sliced mushrooms and cook until they release their moisture and become golden brown, about 5-6 minutes.",
+      "Stir in Arborio rice and cook for 1-2 minutes, until lightly toasted.",
+      "Pour in white wine and cook until it's absorbed by the rice, stirring constantly.",
+      "Ladle in warm vegetable broth, one ladleful at a time, stirring constantly and allowing each addition to be absorbed before adding more.",
+      "Continue cooking and stirring until the risotto is creamy and the rice is al dente, about 18-20 minutes.",
+      "Stir in grated Parmesan cheese and chopped parsley. Season with salt and black pepper to taste.",
+      "Remove from heat and let it rest for a few minutes before serving.",
+      "Garnish with additional Parmesan cheese and parsley if desired.",
+      "Serve hot and enjoy the creamy goodness!"
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 8,
+      "carbohydrates": 50,
+      "fat": 12,
+      "fiber": 3
+    },
+    "ratings": [
+      {
+        "user": "risotto_lover",
+        "rating": 5,
+        "comment": "This mushroom risotto is simply divine! Creamy and flavorful.",
+        "rating_date": "2024-02-19T18:45:00Z"
+      },
+      {
+        "user": "italian_foodie",
+        "rating": 4,
+        "comment": "I love the earthy flavor of the mushrooms in this risotto!",
+        "rating_date": "2024-04-15T13:20:00Z"
       }
     ],
     "featured": true

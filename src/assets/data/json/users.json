@@ -1,0 +1,152 @@
+[
+  {
+    "user_id": 1,
+    "username": "Test",
+    "email": "test@test.com",
+    "full_name": "Test Test",
+    "birthdate": "1990-05-15",
+    "gender": "male",
+    "location": {
+      "city": "Belgrade",
+      "country": "Serbia",
+      "zipcode": "11000"
+    },
+    "profile_picture": "https://example.com/profile_picture.jpg",
+    "followers": 1,
+    "following": 0,
+    "recipes_count": 2,
+    "social_media_accounts": {
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://www.instagram.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    "created_at": "2024-04-07T10:30:00Z",
+    "last_login": "2024-04-07T12:45:00Z"
+  },
+  {
+    "user_id": 2,
+    "username": "FoodieChef",
+    "email": "foodiechef@example.com",
+    "full_name": "Alice Smith",
+    "birthdate": "1985-09-20",
+    "gender": "female",
+    "location": {
+      "city": "London",
+      "country": "United Kingdom",
+      "zipcode": "SW1A 1AA"
+    },
+    "profile_picture": "https://example.com/foodiechef_profile.jpg",
+    "followers": 1500,
+    "following": 300,
+    "recipes_count": 1,
+    "social_media_accounts": {
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://www.instagram.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    "created_at": "2023-12-15T08:45:00Z",
+    "last_login": "2024-04-06T14:20:00Z"
+  },
+  {
+    "user_id": 3,
+    "username": "HealthyEats",
+    "email": "healthyeats@example.com",
+    "full_name": "Emma Johnson",
+    "birthdate": "1992-03-10",
+    "gender": "female",
+    "location": {
+      "city": "Los Angeles",
+      "country": "United States",
+      "zipcode": "90001"
+    },
+    "profile_picture": "https://example.com/healthyeats_profile.jpg",
+    "followers": 2000,
+    "following": 500,
+    "recipes_count": 1,
+    "social_media_accounts": {
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://www.instagram.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    "created_at": "2024-01-20T11:00:00Z",
+    "last_login": "2024-04-07T09:15:00Z"
+  },
+  {
+    "user_id": 4,
+    "username": "TastyTreats",
+    "email": "tastytreats@example.com",
+    "full_name": "Michael Brown",
+    "birthdate": "1988-07-05",
+    "gender": "male",
+    "location": {
+      "city": "Sydney",
+      "country": "Australia",
+      "zipcode": "2000"
+    },
+    "profile_picture": "https://example.com/tastytreats_profile.jpg",
+    "followers": 30,
+    "following": 8,
+    "recipes_count": 3,
+    "social_media_accounts": {
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://www.instagram.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    "created_at": "2023-11-05T14:20:00Z",
+    "last_login": "2024-04-07T11:30:00Z"
+  },
+  {
+    "user_id": 5,
+    "username": "VeggieDelight",
+    "email": "veggiedelight@example.com",
+    "full_name": "Sophia Lee",
+    "birthdate": "1995-12-28",
+    "gender": "female",
+    "location": {
+      "city": "Toronto",
+      "country": "Canada",
+      "zipcode": "M5H 2N2"
+    },
+    "profile_picture": "https://example.com/veggiedelight_profile.jpg",
+    "followers": 250,
+    "following": 40,
+    "recipes_count": 2,
+    "social_media_accounts": {
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://www.instagram.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    "created_at": "2024-02-10T09:10:00Z",
+    "last_login": "2024-04-07T08:45:00Z"
+  },
+  {
+    "user_id": 6,
+    "username": "BakingBliss",
+    "email": "bakingbliss@example.com",
+    "full_name": "David Wilson",
+    "birthdate": "1983-11-18",
+    "gender": "male",
+    "location": {
+      "city": "Paris",
+      "country": "France",
+      "zipcode": "75001"
+    },
+    "profile_picture": "https://example.com/bakingbliss_profile.jpg",
+    "followers": 1800,
+    "following": 600,
+    "recipes_count": 3,
+    "social_media_accounts": {
+      "facebook": "https://www.facebook.com",
+      "twitter": "https://twitter.com",
+      "instagram": "https://www.instagram.com",
+      "linkedin": "https://www.linkedin.com"
+    },
+    "created_at": "2024-03-02T13:50:00Z",
+    "last_login": "2024-04-07T13:15:00Z"
+  }
+]
