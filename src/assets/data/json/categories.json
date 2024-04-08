@@ -128,5 +128,25 @@
         "image": "Beef Roast.jpg"
       }
     ]
+  },
+  {
+    "id": 6,
+    "name": "Rice",
+    "description": "Delicious dishes made with rice as the main ingredient.",
+    "image": "Rice.jpg",
+    "subcategories": [
+      {
+        "id": 601,
+        "name": "Risotto",
+        "description": "Creamy and flavorful rice dishes made with Arborio rice.",
+        "image": "Risotto.jpg"
+      },
+      {
+        "id": 602,
+        "name": "Fried Rice",
+        "description": "Tasty stir-fried rice dishes with assorted vegetables and protein.",
+        "image": "Fried-Rice.jpg"
+      }
+    ]
   }
 ]

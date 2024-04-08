@@ -11,7 +11,7 @@
       "country": "Serbia",
       "zipcode": "11000"
     },
-    "profile_picture": "https://example.com/profile_picture.jpg",
+    "profile_picture": "https://randomuser.me/api/portraits/men/75.jpg",
     "followers": 1,
     "following": 0,
     "recipes_count": 2,
@@ -36,7 +36,7 @@
       "country": "United Kingdom",
       "zipcode": "SW1A 1AA"
     },
-    "profile_picture": "https://example.com/foodiechef_profile.jpg",
+    "profile_picture": "https://randomuser.me/api/portraits/women/11.jpg",
     "followers": 1500,
     "following": 300,
     "recipes_count": 1,
@@ -61,7 +61,7 @@
       "country": "United States",
       "zipcode": "90001"
     },
-    "profile_picture": "https://example.com/healthyeats_profile.jpg",
+    "profile_picture": "https://randomuser.me/api/portraits/women/75.jpg",
     "followers": 2000,
     "following": 500,
     "recipes_count": 1,
@@ -86,7 +86,7 @@
       "country": "Australia",
       "zipcode": "2000"
     },
-    "profile_picture": "https://example.com/tastytreats_profile.jpg",
+    "profile_picture": "https://randomuser.me/api/portraits/men/10.jpg",
     "followers": 30,
     "following": 8,
     "recipes_count": 3,
@@ -111,7 +111,7 @@
       "country": "Canada",
       "zipcode": "M5H 2N2"
     },
-    "profile_picture": "https://example.com/veggiedelight_profile.jpg",
+    "profile_picture": "https://randomuser.me/api/portraits/women/43.jpg",
     "followers": 250,
     "following": 40,
     "recipes_count": 2,
@@ -136,7 +136,7 @@
       "country": "France",
       "zipcode": "75001"
     },
-    "profile_picture": "https://example.com/bakingbliss_profile.jpg",
+    "profile_picture": "https://randomuser.me/api/portraits/men/22.jpg",
     "followers": 1800,
     "following": 600,
     "recipes_count": 3,

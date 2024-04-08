@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Italian",
+    "description": "Delicious Italian dishes.",
+    "image": "https://flagsapi.com/IT/flat/64.png"
+  },
+  {
+    "id": 2,
+    "name": "Chinese",
+    "description": "Authentic Chinese cuisine.",
+    "image": "https://flagsapi.com/CN/flat/64.png"
+  },
+  {
+    "id": 3,
+    "name": "Mexican",
+    "description": "Spicy and flavorful Mexican dishes.",
+    "image": "https://flagsapi.com/MX/flat/64.png"
+  },
+  {
+    "id": 4,
+    "name": "Indian",
+    "description": "Rich and aromatic Indian dishes.",
+    "image": "https://flagsapi.com/IN/flat/64.png"
+  },
+  {
+    "id": 5,
+    "name": "Japanese",
+    "description": "Traditional Japanese cuisine.",
+    "image": "https://flagsapi.com/JP/flat/64.png"
+  },
+  {
+    "id": 6,
+    "name": "French",
+    "description": "Elegant French cuisine.",
+    "image": "https://flagsapi.com/FR/flat/64.png"
+  },
+  {
+    "id": 7,
+    "name": "Thai",
+    "description": "Spicy and aromatic Thai dishes.",
+    "image": "https://flagsapi.com/TH/flat/64.png"
+  },
+  {
+    "id": 8,
+    "name": "Greek",
+    "description": "Mediterranean cuisine with fresh ingredients and bold flavors.",
+    "image": "https://flagsapi.com/GR/flat/64.png"
+  }
+]

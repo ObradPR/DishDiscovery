@@ -1,0 +1,31 @@
+{
+  "social_media": {
+    "facebook": "https://www.facebook.com/DishDiscovery",
+    "twitter": "https://twitter.com/DishDiscovery",
+    "instagram": "https://www.instagram.com/dishdiscovery",
+    "pinterest": "https://www.pinterest.com/dishdiscovery"
+  },
+  "contact_info": {
+    "email": "info@dishdiscovery.com",
+    "phone": "+123-456-7890"
+  },
+  "statistics": {
+    "total_recipes": 131,
+    "total_users": 5403,
+    "active_users": 2730,
+    "new_recipes_last_week": 11,
+    "popular_tags": ["Healthy", "Vegetarian", "Italian", "French", "Desserts"]
+  },
+  "testimonials": [
+    {
+      "user_name": "JohnDoe123",
+      "testimonial_text": "I love DishDiscovery! It's my go-to site for finding new recipes.",
+      "user_avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "user_name": "FoodieGal",
+      "testimonial_text": "Thanks to DishDiscovery, I've become a better cook and have impressed my friends and family with delicious meals!",
+      "user_avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+    }
+  ]
+}
