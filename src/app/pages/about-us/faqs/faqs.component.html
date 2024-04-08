@@ -1,10 +1,28 @@
-<p>faqs works!</p>
-<p>faqs works!</p>
-<p>faqs works!</p>
-<p>faqs works!</p>
-<p>faqs works!</p>
-<p>faqs works!</p>
-<p>faqs works!</p>
-<p>faqs works!</p>
-<p>faqs works!</p>
-<p>faqs works!</p>
+<section class="section-pad-top" id="faqs">
+  <div class="faqs-top">
+    <div class="faqs-wrapper">
+      <h2>FAQs</h2>
+      <p>Frequently Asked Questions.</p>
+      <p>
+        Here are some common questions about
+        <span class="green-text">DishDiscovery</span>.
+      </p>
+    </div>
+  </div>
+  <div class="faqs-bottom">
+    <div class="faqs-wrapper">
+      @for (faq of (faqs$ | async); track faq.id; let i = $index) {
+      <div class="faq-row hidden-el hidden-scale-in">
+        <div class="question-row" (click)="onOpenQuestion(i)">
+          <p>{{ faq.question }}</p>
+        </div>
+        <div class="answer-block">
+          <p>{{ faq.answer }}</p>
+        </div>
+      </div>
+      } @empty {
+      <h3>There are no faqs currently!</h3>
+      }
+    </div>
+  </div>
+</section>

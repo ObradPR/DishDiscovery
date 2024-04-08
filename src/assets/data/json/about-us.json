@@ -20,12 +20,12 @@
     {
       "user_name": "JohnDoe123",
       "testimonial_text": "I love DishDiscovery! It's my go-to site for finding new recipes.",
-      "user_avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+      "user_avatar_url": "https://randomuser.me/api/portraits/men/3.jpg"
     },
     {
       "user_name": "FoodieGal",
       "testimonial_text": "Thanks to DishDiscovery, I've become a better cook and have impressed my friends and family with delicious meals!",
-      "user_avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+      "user_avatar_url": "https://randomuser.me/api/portraits/women/2.jpg"
     }
   ]
 }
