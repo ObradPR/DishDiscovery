@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IFaqDto } from '../../../common/interfaces/faqs.interface';
+import { IFaqDto } from '../../../common/interfaces/about-us/faq.interface';
 import { AboutUsService } from '../../../services/about-us.service';
 
 @Component({

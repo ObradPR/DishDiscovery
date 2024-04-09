@@ -1,0 +1,25 @@
+<div class="our-stats">
+  @if ($stats | async; as stats) {
+  <div class="stat-block">
+    <h3>Total Recipes</h3>
+    <p>{{ stats.total_recipes }}</p>
+  </div>
+  <div class="stat-block">
+    <h3>Total Users</h3>
+    <p>{{ stats.total_users }}</p>
+  </div>
+  <div class="stat-block">
+    <h3>Active Users</h3>
+    <p>{{ stats.active_users }}</p>
+  </div>
+  <div class="stat-block">
+    <h3>New Recipes Last Week</h3>
+    <p>{{ stats.new_recipes_last_week }}</p>
+  </div>
+  } @else {
+  <div class="stat-block">
+    <h3>There was an error trying to get data!</h3>
+    <p>We are sorry! 😢</p>
+  </div>
+  }
+</div>

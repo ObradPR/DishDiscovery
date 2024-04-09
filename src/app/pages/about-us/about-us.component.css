@@ -1,0 +1,55 @@
+section {
+  padding-bottom: 0;
+}
+
+#about-us h2 {
+  text-align: start;
+}
+
+.about-us-wrapper {
+  width: 55%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.about-us-cover .about-us-wrapper {
+  padding-bottom: 2rem;
+}
+
+.about-us-cover h2 {
+  font-size: 6em;
+  color: var(--bs-white);
+  backdrop-filter: blur(2px);
+  width: 47%;
+  border-radius: var(--bs-border-radius);
+  padding: 0 1rem;
+}
+
+.about-us-cover {
+  background-image: url("../../../assets/images/site-info/about-us-cover.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-us-info {
+  display: flex;
+  align-items: center;
+}
+
+.about-us-img-holder {
+  width: 50%;
+}
+
+.about-us-img-holder img {
+  width: 90%;
+  border-radius: var(--bs-border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.about-us-info-right {
+  width: 50%;
+}
+
+.about-us-info-right h3 {
+  font-size: 1.6em;
+}

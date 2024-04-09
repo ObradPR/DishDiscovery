@@ -58,6 +58,13 @@ hr.section-title {
   margin: 0 auto;
 }
 
+hr.thick {
+  margin: 0;
+  height: 12px;
+  border: 0;
+  background-color: var(--light-green);
+}
+
 /* TEXT */
 .green-text {
   color: var(--light-green);

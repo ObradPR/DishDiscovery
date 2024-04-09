@@ -19,12 +19,12 @@
   "testimonials": [
     {
       "user_name": "JohnDoe123",
-      "testimonial_text": "I love DishDiscovery! It's my go-to site for finding new recipes.",
+      "testimonial_text": "DishDiscovery has been an absolute game-changer for me! Whenever I'm feeling stuck in a cooking rut, I know I can rely on DishDiscovery to spark my culinary creativity with their endless array of mouthwatering recipes. It's become my go-to site for finding new dishes to delight my taste buds!",
       "user_avatar_url": "https://randomuser.me/api/portraits/men/3.jpg"
     },
     {
       "user_name": "FoodieGal",
-      "testimonial_text": "Thanks to DishDiscovery, I've become a better cook and have impressed my friends and family with delicious meals!",
+      "testimonial_text": "DishDiscovery has truly elevated my cooking skills to the next level! Thanks to their expertly curated collection of recipes, I've been able to expand my culinary repertoire and impress my friends and family with restaurant-quality meals right at home. From quick weeknight dinners to gourmet feasts, DishDiscovery has never failed to deliver delicious inspiration!",
       "user_avatar_url": "https://randomuser.me/api/portraits/women/2.jpg"
     }
   ]

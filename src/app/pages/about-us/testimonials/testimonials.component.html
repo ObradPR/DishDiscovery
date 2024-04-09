@@ -1,0 +1,34 @@
+<div class="testimonials">
+  <div class="about-us-wrapper">
+    <h3>Testimonials</h3>
+    <hr class="section-title" />
+
+    @if($testimonials | async; as testimonials) {
+    <carousel [isAnimated]="true">
+      @for (testimonial of testimonials; track $index) {
+      <slide>
+        <div class="testimonial-block-holder">
+          <div class="testimonial">
+            <p>
+              {{ testimonial.testimonial_text }}
+            </p>
+            <div class="testimonial-user-info">
+              <div class="testimonial-user-img-holder mb-3">
+                <img
+                  [src]="testimonial.user_avatar_url"
+                  [alt]="testimonial.user_name + ' profile picture'"
+                />
+              </div>
+              <h4>{{ testimonial.user_name }}</h4>
+            </div>
+            <i class="bi bi-quote"></i>
+          </div>
+        </div>
+      </slide>
+      }
+    </carousel>
+    } @else {
+    <p class="mt-5 text-center">There are no testimonial currently!</p>
+    }
+  </div>
+</div>
