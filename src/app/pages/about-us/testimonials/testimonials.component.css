@@ -1,8 +1,8 @@
-.testimonials .about-us-wrapper {
+#testimonials .about-us-wrapper {
   width: 60%;
 }
 
-.testimonials h3 {
+#testimonials h3 {
   text-align: center;
 }
 

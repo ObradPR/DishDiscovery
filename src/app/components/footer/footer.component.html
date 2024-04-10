@@ -1,0 +1,103 @@
+<footer class="text-dark">
+  <div class="footer-top bg-primary py-5">
+    <div class="container d-flex">
+      <div class="footer-left d-flex justify-content-between">
+        <div class="info-block d-flex flex-column">
+          <h4 class="text-uppercase">Info</h4>
+          <a routerLink="/">Home</a>
+          <a href="#">Recipes</a>
+          <a href="#">Upload Yours</a>
+          <a href="#">Sign in</a>
+          <a href="#">Sign up</a>
+        </div>
+        <div class="info-block d-flex flex-column">
+          <h4 class="text-uppercase">Need help?</h4>
+          <a routerLink="/about-us/faqs">Faqs</a>
+          <a href="#">Contact</a>
+          <a href="#">How to upload recipe?</a>
+        </div>
+        <div class="info-block d-flex flex-column">
+          <h4 class="text-uppercase">Company</h4>
+          <a routerLink="/about-us">About Us</a>
+          <a routerLink="/about-us/legal-information">Terms & Conditions</a>
+          <a href="#">Licence</a>
+          <a routerLink="/about-us" fragment="testimonials">Testimonials</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="newsletter">
+          <form [formGroup]="newsletterForm" (ngSubmit)="onAddSubscription()">
+            <label for="newsletter" class="form-label"
+              >Subscribe to our email newsletter</label
+            >
+            <div class="form-row d-flex justify-content-between">
+              <input
+                type="email"
+                id="newsletter"
+                formControlName="email"
+                placeholder="Your email"
+                class="form-control"
+              />
+              <input
+                type="submit"
+                value="Subscribe"
+                class="btn btn-secondary"
+              />
+            </div>
+          </form>
+        </div>
+        @if ($siteInfo | async; as siteInfo) {
+        <div class="social-media">
+          <p class="mb-2 mt-4">Follow us</p>
+          <div class="d-flex">
+            <a
+              [href]="siteInfo.social_media.facebook"
+              target="_blank"
+              class="social-media-block d-flex justify-content-center align-items-center me-2 p-2"
+              ><i class="bi bi-facebook fs-4"></i
+            ></a>
+            <a
+              [href]="siteInfo.social_media.twitter"
+              target="_blank"
+              class="social-media-block d-flex justify-content-center align-items-center me-2 p-2"
+              ><i class="bi bi-twitter fs-4"></i
+            ></a>
+            <a
+              [href]="siteInfo.social_media.instagram"
+              target="_blank"
+              class="social-media-block d-flex justify-content-center align-items-center me-2 p-2"
+              ><i class="bi bi-instagram fs-4"></i
+            ></a>
+            <a
+              [href]="siteInfo.social_media.pinterest"
+              target="_blank"
+              class="social-media-block d-flex justify-content-center align-items-center me-2 p-2"
+              ><i class="bi bi-pinterest fs-4"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contact-info mt-3 d-flex flex-column">
+          <span
+            ><i class="bi bi-telephone-fill fs-4"></i>&nbsp;&nbsp;
+            {{ siteInfo.contact_info.phone }}</span
+          >
+          <span>
+            <i class="bi bi-envelope-fill fs-4"></i>&nbsp;&nbsp;
+            {{ siteInfo.contact_info.email }}
+          </span>
+        </div>
+        } @else {
+        <div class="bg-danger mt-5 rounded-2 p-2">
+          <p class="mb-0">There was an error with getting site data!</p>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom bg-secondary text-center p-2">
+    <p class="mb-0">
+      Copyright &copy; 2024 - DishDiscovery. All rights reserved. Created by
+      Obrad Pualić-Raduko.
+    </p>
+  </div>
+</footer>
