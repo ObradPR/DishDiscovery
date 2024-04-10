@@ -1,22 +1,15 @@
-#faqs h2 {
-  text-align: start;
-}
-
 .faqs-wrapper {
   width: 55%;
-  margin: 0 auto;
   padding: 5rem 0;
 }
 
 .faqs-top h2 {
   font-size: 7em;
-  margin-bottom: 1.5rem;
 }
 
 .faqs-top p {
   color: var(--bs-gray-600);
   font-size: 1.1em;
-  margin-bottom: 0.5rem;
 }
 
 .faqs-bottom {
@@ -29,9 +22,6 @@
 
 .question-row {
   padding: 0.8rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   cursor: pointer;
 }
 
@@ -46,21 +36,16 @@
 }
 
 .question-row p {
-  font-weight: bold;
   font-size: 1.3em;
-  margin-bottom: 0;
 }
 
 .answer-block {
   padding: 0;
   max-height: 0;
-  overflow: hidden;
   transition: max-height var(--transition) ease-in-out;
 }
 
 .answer-block p {
-  line-height: 1.8;
   font-size: 1.1em;
   letter-spacing: 0.3px;
-  margin-bottom: 0.8rem;
 }

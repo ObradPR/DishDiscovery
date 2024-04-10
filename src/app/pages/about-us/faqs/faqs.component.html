@@ -1,23 +1,26 @@
 <section class="section-pad-top" id="faqs">
   <div class="faqs-top">
-    <div class="faqs-wrapper">
-      <h2>FAQs</h2>
-      <p>Frequently Asked Questions.</p>
-      <p>
+    <div class="faqs-wrapper mx-auto">
+      <h2 class="text-start mb-4">FAQs</h2>
+      <p class="mb-2">Frequently Asked Questions.</p>
+      <p class="mb-2">
         Here are some common questions about
         <span class="green-text">DishDiscovery</span>.
       </p>
     </div>
   </div>
   <div class="faqs-bottom">
-    <div class="faqs-wrapper">
+    <div class="faqs-wrapper mx-auto">
       @for (faq of (faqs$ | async); track faq.id; let i = $index) {
       <div class="faq-row hidden-el hidden-scale-in">
-        <div class="question-row" (click)="onOpenQuestion(i)">
-          <p>{{ faq.question }}</p>
+        <div
+          class="question-row d-flex justify-content-between align-items-center"
+          (click)="onOpenQuestion(i)"
+        >
+          <p class="fw-bolder mb-0">{{ faq.question }}</p>
         </div>
-        <div class="answer-block">
-          <p>{{ faq.answer }}</p>
+        <div class="answer-block p-0 overflow-hidden">
+          <p class="mb-3 lh-base ">{{ faq.answer }}</p>
         </div>
       </div>
       } @empty {

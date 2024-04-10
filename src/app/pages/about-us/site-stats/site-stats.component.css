@@ -1,21 +1,7 @@
 .our-stats {
-  background-color: var(--light-red);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   padding: 3rem 3rem 2rem;
 }
 
 .stat-block {
   width: 25%;
-}
-
-.stat-block p {
-  font-size: 1.6em;
-}
-
-.stat-block p,
-.stat-block h3 {
-  font-style: italic;
 }

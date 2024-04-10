@@ -1,6 +1,6 @@
 <div id="testimonials">
   <div class="about-us-wrapper">
-    <h3>Testimonials</h3>
+    <h3 class="text-center">Testimonials</h3>
     <hr class="section-title" />
 
     @if($testimonials | async; as testimonials) {
@@ -9,10 +9,12 @@
       <slide>
         <div class="testimonial-block-holder">
           <div class="testimonial">
-            <p>
+            <p class="fs-4 lh-base">
               {{ testimonial.testimonial_text }}
             </p>
-            <div class="testimonial-user-info">
+            <div
+              class="testimonial-user-info d-flex flex-column justify-content-center align-items-center"
+            >
               <div class="testimonial-user-img-holder mb-3">
                 <img
                   [src]="testimonial.user_avatar_url"

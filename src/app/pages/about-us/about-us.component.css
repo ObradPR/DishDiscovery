@@ -1,11 +1,3 @@
-section {
-  padding-bottom: 0;
-}
-
-#about-us h2 {
-  text-align: start;
-}
-
 .about-us-wrapper {
   width: 55%;
   margin: 0 auto;
@@ -22,18 +14,12 @@ section {
   backdrop-filter: blur(2px);
   width: 47%;
   border-radius: var(--bs-border-radius);
-  padding: 0 1rem;
 }
 
 .about-us-cover {
   background-image: url("../../../assets/images/site-info/about-us-cover.jpg");
   background-position: center;
   background-size: cover;
-}
-
-.about-us-info {
-  display: flex;
-  align-items: center;
 }
 
 .about-us-img-holder {
