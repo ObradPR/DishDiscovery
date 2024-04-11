@@ -3,13 +3,13 @@
   padding: 5rem 0;
 }
 
-.faqs-top h2 {
-  font-size: 7em;
-}
-
-.faqs-top p {
-  color: var(--bs-gray-600);
-  font-size: 1.1em;
+.faqs-top {
+  width: 100%;
+  height: 35dvh;
+  background-image: url("../../../../assets/images/site-info/faqs-cover-bg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .faqs-bottom {
