@@ -3,7 +3,7 @@
     <h3 class="text-center">Testimonials</h3>
     <hr class="section-title" />
 
-    @if($testimonials | async; as testimonials) {
+    @if(testimonials$ | async; as testimonials) {
     <carousel [isAnimated]="true">
       @for (testimonial of testimonials; track $index) {
       <slide>

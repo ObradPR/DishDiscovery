@@ -1,7 +1,7 @@
 <div
   class="our-stats bg-secondary d-flex justify-content-center align-items-center text-center"
 >
-  @if ($stats | async; as stats) {
+  @if (stats$ | async; as stats) {
   <div class="stat-block">
     <h3 class="fst-italic">Total Recipes</h3>
     <p class="fs-3 fst-italic">{{ stats.total_recipes }}</p>

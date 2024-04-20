@@ -9,7 +9,7 @@ import { AboutUsService } from '../../../services/about-us.service';
   styleUrl: './testimonials.component.css',
 })
 export class TestimonialsComponent implements OnInit {
-  $testimonials: Observable<ITestimonialDto[]> | undefined;
+  testimonials$: Observable<ITestimonialDto[]> | undefined;
 
   constructor(private aboutUsService: AboutUsService) {}
 
@@ -18,6 +18,6 @@ export class TestimonialsComponent implements OnInit {
   }
 
   getTestimonials() {
-    this.$testimonials = this.aboutUsService.getTestimonials();
+    this.testimonials$ = this.aboutUsService.getTestimonials();
   }
 }

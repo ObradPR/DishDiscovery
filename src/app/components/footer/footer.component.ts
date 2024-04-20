@@ -10,7 +10,7 @@ import { ISiteInfoDto } from '../../common/interfaces/about-us/site-info.interfa
   styleUrl: './footer.component.css',
 })
 export class FooterComponent implements OnInit {
-  $siteInfo: Observable<ISiteInfoDto> | undefined;
+  siteInfo$: Observable<ISiteInfoDto> | undefined;
   newsletterForm: FormGroup = this.fb.group({});
 
   constructor(
@@ -24,18 +24,17 @@ export class FooterComponent implements OnInit {
   }
 
   getSiteInfo() {
-    this.$siteInfo = this.aboutUsService.getSiteInfo();
+    this.siteInfo$ = this.aboutUsService.getSiteInfo();
   }
 
   formInit() {
     this.newsletterForm = this.fb.group({
-      email: ['', [Validators.email]],
+      email: ['', [Validators.required, Validators.email]],
     });
   }
 
   onAddSubscription() {
-    if (this.newsletterForm.value.email === '' || this.newsletterForm.invalid)
-      return;
+    if (this.newsletterForm.invalid) return;
 
     console.log('Newsletter Email Sent!');
     this.newsletterForm.reset();

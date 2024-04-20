@@ -9,7 +9,7 @@ import { AboutUsService } from '../../../services/about-us.service';
   styleUrl: './site-stats.component.css',
 })
 export class SiteStatsComponent implements OnInit {
-  $stats: Observable<ISiteStatisticDto> | undefined;
+  stats$: Observable<ISiteStatisticDto> | undefined;
 
   constructor(private aboutUsService: AboutUsService) {}
 
@@ -18,6 +18,6 @@ export class SiteStatsComponent implements OnInit {
   }
 
   getSiteStats() {
-    this.$stats = this.aboutUsService.getSiteStatistic();
+    this.stats$ = this.aboutUsService.getSiteStatistic();
   }
 }

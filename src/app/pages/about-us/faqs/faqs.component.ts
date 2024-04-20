@@ -10,7 +10,7 @@ import { AboutUsService } from '../../../services/about-us.service';
 })
 export class FaqsComponent implements OnInit {
   faqs$: Observable<IFaqDto[]> | undefined;
-  openedQuestionIndex: number | undefined = 0;
+  openedQuestionIndex: number | undefined;
 
   constructor(
     private elementRef: ElementRef,

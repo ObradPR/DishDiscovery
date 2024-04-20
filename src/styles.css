@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+/* Main APP */
 :root {
   --light-green: rgb(86, 204, 157);
   --light-red: rgb(243, 150, 154);
@@ -68,6 +68,12 @@ hr.thick {
 /* TEXT */
 .green-text {
   color: var(--light-green);
+}
+
+/* LSIT */
+ol,
+ul {
+  padding-left: 0rem;
 }
 
 /* ANIMATIONS */

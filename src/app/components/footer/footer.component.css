@@ -34,6 +34,10 @@
   transition: all ease-in-out var(--transition);
 }
 
+.social-media-block a {
+  text-decoration: none;
+}
+
 .social-media-block i {
   color: var(--bs-white);
 }
