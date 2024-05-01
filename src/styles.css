@@ -70,6 +70,10 @@ hr.thick {
   color: var(--light-green);
 }
 
+.red-text {
+  color: var(--light-red);
+}
+
 /* LSIT */
 ol,
 ul {

@@ -1,0 +1,15 @@
+section {
+  padding-bottom: 0;
+
+  background-color: var(--bs-white);
+}
+
+.not-found {
+  min-height: 55dvh;
+}
+
+.not-found-text-container {
+  background-color: var(--light-red);
+  padding: 4rem;
+  border-radius: var(--bs-border-radius);
+}

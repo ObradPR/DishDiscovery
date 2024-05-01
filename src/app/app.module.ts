@@ -12,9 +12,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutUsModule } from './modules/about-us.module';
 import { HomeModule } from './modules/home.module';
 import { UserEngagementModule } from './modules/user-engagement.module';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
