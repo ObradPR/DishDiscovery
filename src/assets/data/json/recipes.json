@@ -8,7 +8,7 @@
     "tags": [1],
     "description": "A hearty and flavorful spaghetti dish with rich Bolognese sauce.",
     "image": "Classic Spaghetti Bolognese.webp",
-    "cooking_time": "45 minutes",
+    "cooking_time": "45 min",
     "servings": 4,
     "difficulty": "Medium",
     "dietary_info": {
@@ -95,7 +95,7 @@
     "tags": [6],
     "description": "Juicy and flavorful chicken marinated in lemon and herbs, perfect for grilling.",
     "image": "Grilled Lemon Herb Chicken.jpg",
-    "cooking_time": "30 minutes",
+    "cooking_time": "30 min",
     "servings": 4,
     "difficulty": "Easy",
     "dietary_info": {
@@ -173,7 +173,7 @@
     "tags": [1],
     "description": "A classic creamy pasta dish with tender chicken and rich Alfredo sauce.",
     "image": "Creamy Chicken Alfredo.jpg",
-    "cooking_time": "30 minutes",
+    "cooking_time": "30 min",
     "servings": 4,
     "difficulty": "Medium",
     "dietary_info": {
@@ -253,7 +253,7 @@
     "tags": [6],
     "description": "A flavorful and juicy roast chicken with zesty lemon and aromatic garlic.",
     "image": "Lemon Garlic Roast Chicken.webp",
-    "cooking_time": "1 hour 30 minutes",
+    "cooking_time": "1 h 30 min",
     "servings": 6,
     "difficulty": "Easy",
     "dietary_info": {
@@ -328,7 +328,7 @@
     "tags": [8],
     "description": "A refreshing and colorful Greek salad with crisp vegetables, tangy feta cheese, and briny olives.",
     "image": "Greek Salad with Feta and Olives.jpg",
-    "cooking_time": "15 minutes",
+    "cooking_time": "15 min",
     "servings": 4,
     "difficulty": "Easy",
     "dietary_info": {
@@ -417,7 +417,7 @@
     "tags": [],
     "description": "A rich and decadent chocolate cake with luscious fudge frosting.",
     "image": "Chocolate Fudge Cake.jpg",
-    "cooking_time": "1 hour",
+    "cooking_time": "1 h",
     "servings": 10,
     "difficulty": "Medium",
     "dietary_info": {
@@ -537,7 +537,7 @@
     "tags": [],
     "description": "A creamy and indulgent cheesecake with chunks of Oreo cookies in every bite.",
     "image": "Oreo Cheesecake.jpg",
-    "cooking_time": "1 hour 15 minutes",
+    "cooking_time": "1 h 15 min",
     "servings": 12,
     "difficulty": "Medium",
     "dietary_info": {
@@ -619,7 +619,7 @@
     "tags": [],
     "description": "Classic homemade chocolate chip cookies that are soft, chewy, and utterly delicious.",
     "image": "Chocolate Chip Cookies.jpg",
-    "cooking_time": "20 minutes",
+    "cooking_time": "20 min",
     "servings": 24,
     "difficulty": "Easy",
     "dietary_info": {
@@ -710,7 +710,7 @@
     "tags": [1],
     "description": "A simple and refreshing Italian salad made with fresh tomatoes, mozzarella cheese, basil, and balsamic glaze.",
     "image": "Caprese Salad.webp",
-    "cooking_time": "10 minutes",
+    "cooking_time": "10 min",
     "servings": 4,
     "difficulty": "Easy",
     "dietary_info": {
@@ -789,7 +789,7 @@
     "tags": [7],
     "description": "A flavorful and spicy noodle dish inspired by Thai cuisine, packed with vegetables and herbs.",
     "image": "Spicy Thai Noodles.jpg",
-    "cooking_time": "30 minutes",
+    "cooking_time": "30 min",
     "servings": 4,
     "difficulty": "Medium",
     "dietary_info": {
@@ -890,7 +890,7 @@
     "tags": [8],
     "description": "A refreshing salad with crisp lettuce, juicy tomatoes, cucumber, olives, onions, and creamy feta cheese, tossed in a tangy vinaigrette.",
     "image": "Greek Salad.webp",
-    "cooking_time": "15 minutes",
+    "cooking_time": "15 min",
     "servings": 4,
     "difficulty": "Easy",
     "dietary_info": {
@@ -983,7 +983,7 @@
     "tags": [1],
     "description": "A creamy and comforting risotto packed with earthy mushrooms and flavored with garlic, white wine, and Parmesan cheese.",
     "image": "Mushroom Risotto.jpg",
-    "cooking_time": "40 minutes",
+    "cooking_time": "40 min",
     "servings": 4,
     "difficulty": "Medium",
     "dietary_info": {

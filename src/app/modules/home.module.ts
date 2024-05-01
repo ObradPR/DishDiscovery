@@ -6,7 +6,11 @@ import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from './shared.module';
 
 @NgModule({
-  declarations: [home.HomeComponent, home.CategoryShowcaseComponent],
+  declarations: [
+    home.HomeComponent,
+    home.CategoryShowcaseComponent,
+    home.FeaturedRecipesComponent,
+  ],
   imports: [CommonModule, AppRoutingModule, SharedModule],
 })
 export class HomeModule {}
