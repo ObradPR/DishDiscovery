@@ -6,9 +6,18 @@
           <h4 class="text-uppercase">Info</h4>
           <a routerLink="/">Home</a>
           <a href="#">Recipes</a>
-          <a href="#">Upload Yours</a>
-          <a href="#">Sign in</a>
-          <a href="#">Sign up</a>
+          <a routerLink="/ue/upload-recipe">Upload Yours</a>
+          @if (!isLogged) {
+          <a style="cursor: pointer" (click)="onOpenAuthModal('sign-in')"
+            >Sign in</a
+          >
+          <a style="cursor: pointer" (click)="onOpenAuthModal('sign-up')"
+            >Sign up</a
+          >
+          } @else {
+          <a routerLink="/ue/profile">Profile Page</a>
+          <a style="cursor: pointer" (click)="onLogout()">Logout</a>
+          }
         </div>
         <div class="info-block d-flex flex-column">
           <h4 class="text-uppercase">Need help?</h4>

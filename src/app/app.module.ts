@@ -10,10 +10,10 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutUsModule } from './modules/about-us.module';
+import { AuthModule } from './modules/auth.module';
 import { HomeModule } from './modules/home.module';
 import { UserEngagementModule } from './modules/user-engagement.module';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { AuthModule } from './modules/auth.module';
 
 @NgModule({
   declarations: [
