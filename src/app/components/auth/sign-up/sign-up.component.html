@@ -1,0 +1,112 @@
+<div class="modal-wrapper">
+  <div class="form-holder">
+    <h2>Sign up</h2>
+    <hr class="section-title" />
+    <div class="close-mark" (click)="onClosingModal()">
+      <i class="pi pi-times-circle" style="font-size: 1.3em"></i>
+    </div>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSignUp()">
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating mt-3">
+            <input
+              type="text"
+              id="firstName"
+              formControlName="firstName"
+              placeholder="First name"
+              class="form-control"
+            />
+            <label for="firstName">First name</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating mt-3">
+            <input
+              type="text"
+              id="lastName"
+              formControlName="lastName"
+              placeholder="Last name"
+              class="form-control"
+            />
+            <label for="lastName">Last name</label>
+          </div>
+        </div>
+      </div>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating mt-3">
+            <input
+              type="text"
+              id="username"
+              formControlName="username"
+              placeholder="Username"
+              class="form-control"
+            />
+            <label for="username">Username</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating mt-3">
+            <input
+              type="tel"
+              id="phone"
+              formControlName="phone"
+              placeholder="Phone number"
+              class="form-control"
+            />
+            <label for="phone">Phone number</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-floating mt-3">
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          placeholder="Your email"
+          class="form-control"
+        />
+        <label for="email">Email</label>
+      </div>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating mt-3">
+            <input
+              type="password"
+              id="password"
+              formControlName="password"
+              placeholder="Your password"
+              class="form-control"
+            />
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating mt-3">
+            <input
+              type="password"
+              id="confirmPassword"
+              formControlName="confirmPassword"
+              placeholder="Confirm password"
+              class="form-control"
+            />
+            <label for="confirmPassword">Confirm password</label>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <input type="submit" value="Sign Up" class="btn btn-secondary mt-3" />
+      </div>
+    </form>
+    <div class="text-end">
+      <p
+        class="mb-0 mt-3"
+        style="cursor: pointer; text-decoration: underline"
+        (click)="onSwitchToRegModal()"
+      >
+        Already have an account?
+      </p>
+    </div>
+  </div>
+</div>
+<div class="backdrop"></div>

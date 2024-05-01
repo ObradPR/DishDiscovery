@@ -13,9 +13,15 @@ import { AboutUsModule } from './modules/about-us.module';
 import { HomeModule } from './modules/home.module';
 import { UserEngagementModule } from './modules/user-engagement.module';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AuthModule } from './modules/auth.module';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NotFoundComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NotFoundComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,6 +32,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     AboutUsModule,
     ButtonModule,
     UserEngagementModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -26,7 +26,7 @@
           </li>
           <!-- If the user is singed in -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Upload Yours</a>
+            <a class="nav-link" routerLink="/upload-recipe">Upload Yours</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/about-us">About Us</a>
@@ -59,8 +59,40 @@
             Account
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Sign In</a></li>
-            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+            @if (!isLogged) {
+            <li>
+              <a
+                class="dropdown-item"
+                style="cursor: pointer"
+                (click)="onOpenAuthModal('sign-in')"
+                >Sign In</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                style="cursor: pointer"
+                (click)="onOpenAuthModal('sign-up')"
+                >Sign Up</a
+              >
+            </li>
+            } @else {
+            <li>
+              <a
+                class="dropdown-item"
+                style="cursor: pointer"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                style="cursor: pointer; background-color: var(--light-red)"
+                (click)="onLogout()"
+                >Log out</a
+              >
+            </li>
+            }
           </ul>
         </div>
       </div>
