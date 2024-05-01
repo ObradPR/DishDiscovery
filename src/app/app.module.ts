@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutUsModule } from './modules/about-us.module';
 import { HomeModule } from './modules/home.module';
+import { UserEngagementModule } from './modules/user-engagement.module';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
@@ -23,6 +24,7 @@ import { HomeModule } from './modules/home.module';
     HomeModule,
     AboutUsModule,
     ButtonModule,
+    UserEngagementModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

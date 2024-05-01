@@ -26,39 +26,3 @@
 .form-row input[type="submit"] {
   width: 30%;
 }
-
-.social-media-block {
-  width: 3.1rem;
-  height: 3.1rem;
-  border-radius: var(--bs-border-radius);
-  transition: all ease-in-out var(--transition);
-}
-
-.social-media-block a {
-  text-decoration: none;
-}
-
-.social-media-block i {
-  color: var(--bs-white);
-}
-
-.social-media-block:hover i {
-  color: var(--bs-gray-300);
-}
-
-.social-media-block:hover {
-  box-shadow: var(--box-shadow);
-}
-
-.social-media-block:nth-child(1) {
-  background-color: #1877f2;
-}
-.social-media-block:nth-child(2) {
-  background-color: #1da1f2;
-}
-.social-media-block:nth-child(3) {
-  background: linear-gradient(to bottom left, #833ab4, #c13584, #fbb231);
-}
-.social-media-block:nth-child(4) {
-  background-color: #e60023;
-}
