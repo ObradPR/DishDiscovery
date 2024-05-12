@@ -1,7 +1,6 @@
-export interface ICategoryDto {
+export interface ICuisineDto {
   id: number;
   name: string;
   description: string;
   image: string;
-  subcategories?: ICategoryDto[];
 }

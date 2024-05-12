@@ -1,0 +1,22 @@
+[
+  { "id": 1, "name": "Flour", "quantity_type": "grams" },
+  { "id": 2, "name": "Sugar", "quantity_type": "grams" },
+  { "id": 3, "name": "Salt", "quantity_type": "grams" },
+  { "id": 4, "name": "Eggs", "quantity_type": "units" },
+  { "id": 5, "name": "Milk", "quantity_type": "ml" },
+  { "id": 6, "name": "Butter", "quantity_type": "grams" },
+  { "id": 7, "name": "Vanilla Extract", "quantity_type": "ml" },
+  { "id": 8, "name": "Baking Powder", "quantity_type": "grams" },
+  { "id": 9, "name": "Chocolate Chips", "quantity_type": "grams" },
+  { "id": 10, "name": "Olive Oil", "quantity_type": "ml" },
+  { "id": 11, "name": "Onion", "quantity_type": "units" },
+  { "id": 12, "name": "Garlic", "quantity_type": "units" },
+  { "id": 13, "name": "Tomatoes", "quantity_type": "units" },
+  { "id": 14, "name": "Basil", "quantity_type": "grams" },
+  { "id": 15, "name": "Pasta", "quantity_type": "grams" },
+  { "id": 16, "name": "Parmesan Cheese", "quantity_type": "grams" },
+  { "id": 17, "name": "Ground Beef", "quantity_type": "grams" },
+  { "id": 18, "name": "Chicken Breast", "quantity_type": "grams" },
+  { "id": 19, "name": "Spinach", "quantity_type": "grams" },
+  { "id": 20, "name": "Yogurt", "quantity_type": "grams" }
+]

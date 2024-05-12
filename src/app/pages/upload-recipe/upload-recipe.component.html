@@ -1,1 +1,462 @@
-<p>upload-recipe works!</p>
+<section class="upload-recipe section-pad-top container">
+  <h2 class="pt-5">Upload your <span class="green-text">recipe</span></h2>
+  <hr class="section-title" />
+  <div class="upload-recipe-bottom pt-5 d-flex">
+    <div class="upload-info">
+      <ul>
+        <li><strong>Title:</strong> Enter the title of your recipe.</li>
+        <li>
+          <strong>Description:</strong> Provide a brief description of your
+          recipe, highlighting its key ingredients or flavors.
+        </li>
+        <li>
+          <strong>Instructions:</strong> Write detailed step-by-step
+          instructions on how to prepare the recipe.
+        </li>
+        <li>
+          <strong>Meal Type:</strong> Select the category of meal your recipe
+          belongs to, such as breakfast, lunch, dinner, or snacks.
+        </li>
+        <li>
+          <strong>Difficulty:</strong> Choose the level of complexity in making
+          the recipe, ranging from easy to difficult.
+        </li>
+        <li>
+          <strong>Cooking Time:</strong> Specify the estimated time required to
+          prepare and cook the recipe.
+        </li>
+        <li>
+          <strong>Servings:</strong> Indicate the number of servings the recipe
+          yields.
+        </li>
+        <li>
+          <strong>Dietary Information Checkboxes:</strong>
+          <ul>
+            <li>
+              <strong>Gluten Free:</strong> Check if the recipe does not contain
+              gluten.
+            </li>
+            <li>
+              <strong>Dairy Free:</strong> Check if the recipe does not contain
+              dairy products.
+            </li>
+            <li>
+              <strong>Vegetarian:</strong> Check if the recipe is suitable for
+              vegetarians.
+            </li>
+            <li>
+              <strong>Vegan:</strong> Check if the recipe is suitable for
+              vegans.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Calories:</strong> Enter the number of calories per serving.
+        </li>
+        <li>
+          <strong>Protein:</strong> Enter the amount of protein per serving.
+        </li>
+        <li>
+          <strong>Carbohydrates:</strong> Enter the amount of carbohydrates per
+          serving.
+        </li>
+        <li><strong>Fats:</strong> Enter the amount of fats per serving.</li>
+        <li><strong>Fiber:</strong> Enter the amount of fiber per serving.</li>
+        <li>
+          <strong>Upload Recipe Image:</strong> Choose an image file to upload
+          for the recipe.
+        </li>
+        <li>
+          <strong>Categories:</strong> Select the categories that your recipe
+          belongs to, such as dessert, appetizer, main course, etc.
+        </li>
+        <li>
+          <strong>Cuisines:</strong> Select the cuisines that your recipe is
+          associated with, such as Italian, Mexican, Asian, etc.
+        </li>
+        <li>
+          <strong>Ingredients:</strong> Add the ingredients required for your
+          recipe. For each ingredient, include its name and quantity for its
+          measurement unit (e.g., grams, milliliters, units).
+        </li>
+      </ul>
+    </div>
+    <div class="upload-form">
+      <form [formGroup]="uploadForm" (ngSubmit)="onSubmitUpload()">
+        <div class="form-floating">
+          <input
+            type="text"
+            id="title"
+            formControlName="title"
+            placeholder="Title"
+            class="form-control"
+          />
+          <label for="title">Title</label>
+        </div>
+
+        <div class="form-floating mt-3">
+          <textarea
+            formControlName="description"
+            id="description"
+            placeholder="Description"
+            class="form-control"
+            style="height: 100px"
+          ></textarea>
+          <label for="description">Description</label>
+        </div>
+
+        <div class="form-floating mt-3">
+          <textarea
+            formControlName="instructions"
+            id="instructions"
+            placeholder="Instructions"
+            class="form-control"
+            style="height: 150px"
+          ></textarea>
+          <label for="instructions">Instructions</label>
+        </div>
+
+        <div class="row g-2 mt-3">
+          <div class="col-md">
+            <div class="form-floating">
+              <select
+                class="form-select"
+                id="meal-types"
+                formControlName="mealType"
+              >
+                <option selected value="0">-- Select --</option>
+                @for (item of mealTypes$ | async; track $index) {
+                <option [value]="item.id">{{ item.name }}</option>
+                } @empty {
+                <option value="0">
+                  There was an error getting meal types.
+                </option>
+                }
+              </select>
+              <label for="meal-types">Meal type</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <select
+                class="form-select"
+                id="difficulty"
+                formControlName="difficulty"
+              >
+                <option selected value="0">-- Select --</option>
+                @for (item of difficultyCooking$ | async; track $index) {
+                <option [value]="item.id">{{ item.name }}</option>
+                } @empty {
+                <option value="0">
+                  There was an error getting difficulties.
+                </option>
+                }
+              </select>
+              <label for="difficulty">Difficulty</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2 mt-3">
+          <div class="col-md">
+            <div class="form-floating">
+              <select
+                class="form-select"
+                id="cooking-time"
+                formControlName="cookingTime"
+              >
+                <option selected value="0">-- Select --</option>
+                @for (item of cookingTimes$ | async; track $index) {
+                <option [value]="item.id">{{ item.name }}</option>
+                } @empty {
+                <option value="0">
+                  There was an error getting cooking times.
+                </option>
+                }
+              </select>
+              <label for="cooking-time">Cooking time</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <input
+                type="number"
+                id="servings"
+                formControlName="servings"
+                placeholder="servings"
+                class="form-control"
+              />
+              <label for="servings">Servings</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-2 mt-3">
+          <div class="col-md">
+            <ng-container formGroupName="dietaryInfo">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="gluten-free"
+                  id="glutenFree"
+                  formControlName="glutenFree"
+                />
+                <label class="form-check-label" for="glutenFree">
+                  Gluten free
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="dairy-free"
+                  id="dairyFree"
+                  formControlName="dairyFree"
+                />
+                <label class="form-check-label" for="dairyFree">
+                  Dairy free
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="vegetarian"
+                  id="vegetarian"
+                  formControlName="vegetarian"
+                />
+                <label class="form-check-label" for="vegetarian">
+                  Vegetarian
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="vegan"
+                  id="vegan"
+                  formControlName="vegan"
+                />
+                <label class="form-check-label" for="vegan"> Vegan </label>
+              </div>
+            </ng-container>
+            <div class="mt-4">
+              <label class="form-check-label" for="recipeImg">Upload</label>
+              <input
+                type="file"
+                class="form-control"
+                id="recipeImg"
+                formControlName="recipeImg"
+                (change)="onImagePicked($event)"
+              />
+            </div>
+
+            <div
+              class="d-flex justify-content-between flex-column mt-3"
+              formArrayName="categories"
+            >
+              <label class="form-label">Categories</label>
+              @for (category of categoriesFormArray.controls; track category;
+              let i = $index) {
+              <div class="form-floating mt-2">
+                <select
+                  class="form-select"
+                  [id]="'categories' + i"
+                  [formControlName]="i"
+                >
+                  <option selected value="0">-- Select --</option>
+                  @for (item of flattenedCategories; track $index) {
+                  <option [value]="item.id">{{ item.name }}</option>
+                  } @empty {
+                  <option value="0">
+                    There was an error getting categories.
+                  </option>
+                  }
+                </select>
+                <label [for]="'categories' + i">Categories</label>
+              </div>
+              }
+              <div class="d-flex justify-content-between">
+                <button
+                  class="btn btn-primary mt-2"
+                  (click)="onAddControl($event, 'categories')"
+                  style="width: 48%"
+                >
+                  Add
+                </button>
+                <button
+                  class="btn btn-secondary mt-2"
+                  (click)="onRemoveControl($event, 'categories')"
+                  style="width: 48%"
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-between flex-column mt-3"
+              formArrayName="cuisines"
+            >
+              <label class="form-label">Cuisines</label>
+              @for (cuisine of cusinesFormArray.controls; track cuisine; let i =
+              $index) {
+              <div class="form-floating mt-2">
+                <select
+                  class="form-select"
+                  [id]="'cuisines' + i"
+                  [formControlName]="i"
+                >
+                  <option selected value="0">-- Select --</option>
+                  @for (item of cuisines$ | async; track $index) {
+                  <option [value]="item.id">{{ item.name }}</option>
+                  } @empty {
+                  <option value="0">
+                    There was an error getting cuisines.
+                  </option>
+                  }
+                </select>
+                <label [for]="'cuisines' + i">Cuisines</label>
+              </div>
+              }
+              <div class="d-flex justify-content-between">
+                <button
+                  class="btn btn-primary mt-2"
+                  (click)="onAddControl($event, 'cuisines')"
+                  style="width: 48%"
+                >
+                  Add
+                </button>
+                <button
+                  class="btn btn-secondary mt-2"
+                  (click)="onRemoveControl($event, 'cuisines')"
+                  style="width: 48%"
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md" formGroupName="nutrition">
+            <div class="form-floating">
+              <input
+                type="number"
+                id="calories"
+                formControlName="calories"
+                placeholder="calories"
+                class="form-control"
+              />
+              <label for="calories">Calories</label>
+            </div>
+            <div class="form-floating mt-3">
+              <input
+                type="number"
+                id="protein"
+                formControlName="protein"
+                placeholder="protein"
+                class="form-control"
+              />
+              <label for="protein">Protein</label>
+            </div>
+            <div class="form-floating mt-3">
+              <input
+                type="number"
+                id="carbohydrates"
+                formControlName="carbohydrates"
+                placeholder="carbohydrates"
+                class="form-control"
+              />
+              <label for="carbohydrates">Carbohydrates</label>
+            </div>
+            <div class="form-floating mt-3">
+              <input
+                type="number"
+                id="fat"
+                formControlName="fat"
+                placeholder="fat"
+                class="form-control"
+              />
+              <label for="fat">Fat</label>
+            </div>
+            <div class="form-floating mt-3">
+              <input
+                type="number"
+                id="fiber"
+                formControlName="fiber"
+                placeholder="fiber"
+                class="form-control"
+              />
+              <label for="fiber">Fiber</label>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex justify-content-between flex-column mt-3"
+          formArrayName="ingredients"
+        >
+          <label for="form-label">Ingredients</label>
+          @for (cuisine of ingredientsFormArray.controls; track cuisine; let i =
+          $index) {
+          <div class="row g-2 mt-3" [formGroupName]="i">
+            <div class="col-md">
+              <div class="form-floating">
+                <select
+                  class="form-select"
+                  [id]="'ingredients' + i"
+                  formControlName="selectedIngredient"
+                  (change)="onIngredientChange($event, i)"
+                >
+                  <option selected value="0">-- Select --</option>
+                  @for (item of ingredients$ | async; track $index) {
+                  <option [value]="item.id">{{ item.name }}</option>
+                  } @empty {
+                  <option value="0">
+                    There was an error getting ingredients.
+                  </option>
+                  }
+                </select>
+                <label [for]="'ingredients' + i">Ingredients</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <input
+                  type="number"
+                  [id]="'quantity' + i"
+                  formControlName="quantity"
+                  placeholder="quantity"
+                  class="form-control"
+                />
+                <label for="quantity" [id]="'quantity-label' + i"
+                  >Quantity</label
+                >
+              </div>
+            </div>
+          </div>
+          }
+          <div class="d-flex justify-content-start">
+            <button
+              class="btn btn-primary mt-2"
+              (click)="onAddControl($event, 'ingredients')"
+              style="width: 24%"
+            >
+              Add
+            </button>
+            <button
+              class="btn btn-secondary mt-2 ms-2"
+              (click)="onRemoveControl($event, 'ingredients')"
+              style="width: 24%"
+            >
+              Remove
+            </button>
+          </div>
+        </div>
+
+        <div class="text-end mt-3">
+          <input type="submit" value="Upload" class="btn btn-primary" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

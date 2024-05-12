@@ -1,0 +1,22 @@
+[
+  { "id": 1, "name": "15 min" },
+  { "id": 2, "name": "30 min" },
+  { "id": 3, "name": "45 min" },
+  { "id": 4, "name": "1 h" },
+  { "id": 5, "name": "1 h 15 min" },
+  { "id": 6, "name": "1 h 30 min" },
+  { "id": 7, "name": "1 h 45 min" },
+  { "id": 8, "name": "2 h" },
+  { "id": 9, "name": "2 h 15 min" },
+  { "id": 10, "name": "2 h 30 min" },
+  { "id": 11, "name": "2 h 45 min" },
+  { "id": 12, "name": "3 h" },
+  { "id": 13, "name": "3 h 15 min" },
+  { "id": 14, "name": "3 h 30 min" },
+  { "id": 15, "name": "3 h 45 min" },
+  { "id": 16, "name": "4 h" },
+  { "id": 17, "name": "4 h 15 min" },
+  { "id": 18, "name": "4 h 30 min" },
+  { "id": 19, "name": "4 h 45 min" },
+  { "id": 20, "name": "5 h" }
+]

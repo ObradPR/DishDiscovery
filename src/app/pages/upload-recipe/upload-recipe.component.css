@@ -1,0 +1,19 @@
+.upload-recipe-bottom {
+  width: 100%;
+}
+
+.upload-info {
+  width: 50%;
+}
+
+.upload-form {
+  width: 50%;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+li {
+  margin-top: 1rem;
+}
