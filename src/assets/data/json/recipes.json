@@ -619,7 +619,7 @@
     "tags": [],
     "description": "Classic homemade chocolate chip cookies that are soft, chewy, and utterly delicious.",
     "image": "Chocolate Chip Cookies.jpg",
-    "cooking_time": "20 min",
+    "cooking_time": "15 min",
     "servings": 24,
     "difficulty": "Easy",
     "dietary_info": {
@@ -710,7 +710,7 @@
     "tags": [1],
     "description": "A simple and refreshing Italian salad made with fresh tomatoes, mozzarella cheese, basil, and balsamic glaze.",
     "image": "Caprese Salad.webp",
-    "cooking_time": "10 min",
+    "cooking_time": "15 min",
     "servings": 4,
     "difficulty": "Easy",
     "dietary_info": {
@@ -983,7 +983,7 @@
     "tags": [1],
     "description": "A creamy and comforting risotto packed with earthy mushrooms and flavored with garlic, white wine, and Parmesan cheese.",
     "image": "Mushroom Risotto.jpg",
-    "cooking_time": "40 min",
+    "cooking_time": "45 min",
     "servings": 4,
     "difficulty": "Medium",
     "dietary_info": {

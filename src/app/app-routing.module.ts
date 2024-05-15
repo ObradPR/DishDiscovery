@@ -23,6 +23,11 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'recipes',
+        loadChildren: () =>
+          import('./modules/recipe.module').then((m) => m.RecipesModule),
+      },
+      {
         path: 'error',
         loadChildren: () =>
           import('./modules/error.module').then((m) => m.ErrorModule),

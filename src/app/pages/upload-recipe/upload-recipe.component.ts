@@ -1,20 +1,13 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
-import {
-  FormArray,
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
-import { Observable, catchError, map, of, take } from 'rxjs';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Observable, take } from 'rxjs';
 import { ICookingTimeDto } from '../../common/interfaces/category/cooking-time.interface';
 import { ICuisineDto } from '../../common/interfaces/category/cuisine.interface';
 import { IDifficultyCookingDto } from '../../common/interfaces/category/difficulty-cooking.interface';
 import { IMealTypeDto } from '../../common/interfaces/category/meal-type.interface';
+import { IBaseIngredientDto } from '../../common/interfaces/recipe/base-ingredient.interface';
 import { CategoryService } from '../../services/category.service';
 import { RecipeService } from '../../services/recipe.service';
-import { IBaseIngredientDto } from '../../common/interfaces/recipe/base-ingredient.interface';
-import { ICategoryDto } from '../../common/interfaces/category/category.interface';
 
 @Component({
   selector: 'app-upload-recipe',

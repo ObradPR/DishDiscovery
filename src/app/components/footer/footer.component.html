@@ -5,7 +5,7 @@
         <div class="info-block d-flex flex-column">
           <h4 class="text-uppercase">Info</h4>
           <a routerLink="/">Home</a>
-          <a href="#">Recipes</a>
+          <a routerLink="/recipes">Recipes</a>
           <a routerLink="/ue/upload-recipe">Upload Yours</a>
           @if (!isLogged) {
           <a style="cursor: pointer" (click)="onOpenAuthModal('sign-in')"

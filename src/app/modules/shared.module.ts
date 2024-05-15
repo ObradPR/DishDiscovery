@@ -2,19 +2,12 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { CarouselModule as NgxCarouselModule } from 'ngx-bootstrap/carousel';
-import { ButtonModule } from 'primeng/button';
 import { CarouselModule as PrimeNgCarouselModule } from 'primeng/carousel';
-import { TagModule } from 'primeng/tag';
+import { ExtractCharactersPipe } from '../pipes/extract-characters.pipe';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    NgxCarouselModule.forRoot(),
-    PrimeNgCarouselModule,
-    TagModule,
-    ButtonModule,
-  ],
-  exports: [NgxCarouselModule, PrimeNgCarouselModule, TagModule, ButtonModule],
+  declarations: [ExtractCharactersPipe],
+  imports: [CommonModule, NgxCarouselModule.forRoot(), PrimeNgCarouselModule],
+  exports: [NgxCarouselModule, PrimeNgCarouselModule, ExtractCharactersPipe],
 })
 export class SharedModule {}
