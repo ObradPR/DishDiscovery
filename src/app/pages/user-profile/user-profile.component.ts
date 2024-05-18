@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { Subscription, switchMap } from 'rxjs';
 import { IUserDto } from '../../common/interfaces/user/user.interface';
@@ -9,7 +9,7 @@ import { UserService } from '../../services/user.service';
   templateUrl: './user-profile.component.html',
   styleUrl: './user-profile.component.css',
 })
-export class UserProfileComponent implements OnInit {
+export class UserProfileComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
   user: IUserDto | undefined;
   loggedUserEmail: string = '';
@@ -41,5 +41,9 @@ export class UserProfileComponent implements OnInit {
           },
         })
     );
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach((subscription) => subscription.unsubscribe());
   }
 }

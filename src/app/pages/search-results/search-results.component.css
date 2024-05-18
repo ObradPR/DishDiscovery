@@ -1,0 +1,40 @@
+section {
+  background-color: var(--bs-white);
+}
+
+.serach-results {
+  min-height: 55dvh;
+}
+
+.not-found-search {
+  padding: 4rem;
+  border-radius: var(--bs-border-radius);
+}
+.search-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.item-block {
+  width: 100%;
+  transition: 200ms all ease-in-out;
+}
+
+.item-block:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.img-holder {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.img-holder img {
+  max-height: 10rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}

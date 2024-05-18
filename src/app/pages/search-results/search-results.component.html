@@ -1,0 +1,67 @@
+<section class="serach-results section-pad-top container">
+  <h2 class="mt-5"><span class="green-text">Search</span> results</h2>
+  <hr class="section-title mb-5" />
+  <div [ngClass]="thingsArr.length > 0 ? 'search-items' : ''">
+    @for(item of thingsArr; track $index){ @if(isRecipe(item)){
+    <div
+      class="item-block border border-2 p-3 rounded-2 text-center"
+      style="cursor: pointer"
+      routerLink="/recipes/{{ item.id }}"
+    >
+      <div class="img-holder">
+        <img
+          src="../../../assets/images/recipes/{{ item.image }}"
+          [alt]="item.title"
+          class="rounded-2 shadow"
+        />
+      </div>
+      <div class="recipe-stats mt-4">
+        <h5 class="mb-4">{{ item.title }}</h5>
+        <div class>
+          <div class="d-flex justify-content-center">
+            Cooking time: {{ item.cooking_time }}
+          </div>
+          <div class="d-flex justify-content-center">
+            Difficulty: {{ item.difficulty }}
+          </div>
+          <div class="d-flex justify-content-center">
+            Servings: {{ item.servings }}
+          </div>
+        </div>
+      </div>
+    </div>
+    } @else if(!isRecipe(item)){
+    <div
+      class="item-block border border-2 p-3 rounded-2 text-center"
+      style="cursor: pointer"
+      routerLink="/recipes/{{ item.user_id }}"
+    >
+      <div class="img-holder">
+        <img
+          [src]="item.profile_picture"
+          [alt]="item.full_name"
+          class="rounded-2 shadow"
+        />
+      </div>
+      <div class="user-stats mt-4">
+        <h5 class="mb-4">{{ item.username }}</h5>
+        <div class>
+          <div class="d-flex justify-content-center">
+            Followers: {{ item.followers }}
+          </div>
+          <div class="d-flex justify-content-center">
+            Following: {{ item.following }}
+          </div>
+          <div class="d-flex justify-content-center">
+            Recipes: {{ item.recipes_count }}
+          </div>
+        </div>
+      </div>
+    </div>
+    } } @empty {
+    <div class="bg-danger rounded-2 mt-5 p-2 not-found-search text-center">
+      <p class="mb-0">No user or recipe found!</p>
+    </div>
+    }
+  </div>
+</section>

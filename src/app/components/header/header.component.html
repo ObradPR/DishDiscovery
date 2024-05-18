@@ -40,14 +40,16 @@
         </ul>
 
         <!-- SEARCH & AUTH -->
-        <form class="d-flex" role="search">
+        <form class="d-flex" role="search" (ngSubmit)="onSearch($event)">
           <input
+            name="forSearch"
             class="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
+            [(ngModel)]="forSearch"
           />
-          <button class="btn btn-secondary" type="submit">Search</button>
+          <button class="btn btn-secondary">Search</button>
         </form>
         <div class="dropdown">
           <button

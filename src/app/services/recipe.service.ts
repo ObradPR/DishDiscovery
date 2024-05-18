@@ -63,4 +63,20 @@ export class RecipeService {
         map((recipes) => recipes.find((recipe) => recipe.id === +id) || null)
       );
   }
+
+  getRecipesBySearch(query: string): Observable<IRecipeDto[]> {
+    query = query.toLocaleLowerCase();
+
+    return this.dataService
+      .get<IRecipeDto[]>('recipes.json')
+      .pipe(
+        map((recipes) =>
+          recipes.filter(
+            (recipe) =>
+              recipe.title.toLocaleLowerCase().includes(query) ||
+              recipe.description.toLocaleLowerCase().includes(query)
+          )
+        )
+      );
+  }
 }

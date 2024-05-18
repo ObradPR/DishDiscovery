@@ -20,4 +20,21 @@ export class UserService {
       .get<IUserDto[]>('users.json')
       .pipe(map((users) => users.find((u) => u.email === email)));
   }
+
+  getUsersBySearch(query: string): Observable<IUserDto[]> {
+    query = query.toLocaleLowerCase();
+
+    return this.dataService
+      .get<IUserDto[]>('users.json')
+      .pipe(
+        map((users) =>
+          users.filter(
+            (user) =>
+              user.full_name.toLocaleLowerCase().includes(query) ||
+              user.email.toLocaleLowerCase().includes(query) ||
+              user.username.toLocaleLowerCase().includes(query)
+          )
+        )
+      );
+  }
 }

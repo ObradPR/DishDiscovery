@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit, OnDestroy {
   isLogged = false;
   subscriptions: Subscription[] = [];
+  forSearch: string = '';
 
   constructor(private authService: AuthService, private router: Router) {}
 
@@ -35,6 +36,14 @@ export class HeaderComponent implements OnInit, OnDestroy {
   onLogout(): void {
     this.router.navigate(['/']);
     this.authService.logout();
+  }
+
+  onSearch(event: Event) {
+    event.preventDefault();
+
+    if (this.forSearch) {
+      this.router.navigate(['/ue/search', this.forSearch]);
+    }
   }
 
   ngOnDestroy(): void {
