@@ -134,6 +134,10 @@ ul.sub-ul {
   background-color: #e60023;
 }
 
+.social-media-block:nth-child(4).linkedIn {
+  background-color: #0077b5;
+}
+
 /* MODALS */
 .modal-wrapper {
   position: fixed;

@@ -14,4 +14,10 @@ export class UserService {
       .get<IUserDto[]>('users.json')
       .pipe(map((users) => users.find((u) => u.user_id === id)));
   }
+
+  getUserByEmail(email: string): Observable<IUserDto | undefined> {
+    return this.dataService
+      .get<IUserDto[]>('users.json')
+      .pipe(map((users) => users.find((u) => u.email === email)));
+  }
 }
