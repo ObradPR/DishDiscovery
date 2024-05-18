@@ -454,7 +454,12 @@
         </div>
 
         <div class="text-end mt-3">
-          <input type="submit" value="Upload" class="btn btn-primary" />
+          <input
+            type="submit"
+            value="Upload"
+            class="btn btn-primary"
+            [disabled]="uploadForm.invalid || uploadBtnDisabled"
+          />
         </div>
       </form>
     </div>

@@ -49,7 +49,9 @@
             aria-label="Search"
             [(ngModel)]="forSearch"
           />
-          <button class="btn btn-secondary">Search</button>
+          <button class="btn btn-secondary" [disabled]="!forSearch">
+            Search
+          </button>
         </form>
         <div class="dropdown">
           <button

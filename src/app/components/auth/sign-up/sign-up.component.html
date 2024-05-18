@@ -95,7 +95,12 @@
         </div>
       </div>
       <div class="text-center">
-        <input type="submit" value="Sign Up" class="btn btn-secondary mt-3" />
+        <input
+          type="submit"
+          value="Sign Up"
+          class="btn btn-secondary mt-3"
+          [disabled]="signUpForm.invalid"
+        />
       </div>
     </form>
     <div class="text-end">

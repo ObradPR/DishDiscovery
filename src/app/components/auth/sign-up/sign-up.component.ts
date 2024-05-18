@@ -41,7 +41,7 @@ export class SignUpComponent {
         '',
         [
           Validators.required,
-          Validators.pattern(this.authService.getNameRegex()),
+          Validators.pattern(this.authService.getUsernameRegex()),
         ],
       ],
       phone: [

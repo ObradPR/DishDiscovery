@@ -11,12 +11,16 @@ export class AuthService {
   // REGEX
   private nameRegex =
     /^[A-ZČĆŽĐŠ][a-zA-ZČĆŽĐŠčćžđš]*('[a-zA-ZČĆŽĐŠčćžđš]*)?(\s[a-zA-ZČĆŽĐŠčćžđš]*)?$/;
-  private phoneRegex = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+  private usernameRegex = /^[a-zA-Z0-9_-]{5,20}$/;
+  private phoneRegex = /^[0-9]{6,15}$/;
   private passwordRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{};:,<.>]).{8,}$/;
 
   getNameRegex(): RegExp {
     return this.nameRegex;
+  }
+  getUsernameRegex(): RegExp {
+    return this.usernameRegex;
   }
   getPhoneRegex(): RegExp {
     return this.phoneRegex;

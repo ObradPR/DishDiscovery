@@ -27,7 +27,12 @@
         <label for="password">Password</label>
       </div>
       <div class="text-center">
-        <input type="submit" value="Sign In" class="btn btn-secondary mt-3" />
+        <input
+          type="submit"
+          value="Sign In"
+          class="btn btn-secondary mt-3"
+          [disabled]="signInForm.invalid"
+        />
       </div>
     </form>
     <div class="text-end">

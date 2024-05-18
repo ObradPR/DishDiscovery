@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../services/auth.service';
 import { LocalStorageService } from '../../../services/local-storage.service';
+import { UserService } from '../../../services/user.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -14,7 +15,8 @@ export class SignInComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private authService: AuthService,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private userService: UserService
   ) {}
 
   ngOnInit(): void {
@@ -35,12 +37,21 @@ export class SignInComponent implements OnInit {
   onSignIn() {
     if (this.signInForm.invalid) return;
 
-    console.log('Successfully sign in!');
-    this.localStorageService.setUserInLS(this.signInForm.value.email);
-    this.authService.setUserFromLS();
+    // If user exists
+    this.userService.getUserByEmail(this.signInForm.value.email).subscribe({
+      next: (data) => {
+        if (data) {
+          this.localStorageService.setUserInLS(this.signInForm.value.email);
+          this.authService.setUserFromLS();
 
-    this.onClosingModal();
-    this.signInForm.reset();
+          console.log('Successfully sign in!');
+          this.onClosingModal();
+          this.signInForm.reset();
+        } else {
+          return;
+        }
+      },
+    });
   }
 
   onSwitchToRegModal() {

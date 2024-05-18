@@ -1,5 +1,12 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {
+  AbstractControl,
+  FormArray,
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 import { Observable, take } from 'rxjs';
 import { ICookingTimeDto } from '../../common/interfaces/category/cooking-time.interface';
 import { ICuisineDto } from '../../common/interfaces/category/cuisine.interface';
@@ -22,6 +29,7 @@ export class UploadRecipeComponent implements OnInit {
   cuisines$: Observable<ICuisineDto[]> | undefined;
   ingredients$: Observable<IBaseIngredientDto[]> | undefined;
   flattenedCategories: { id: number; name: string }[] = [];
+  uploadBtnDisabled = true;
 
   constructor(
     private fb: FormBuilder,
@@ -68,13 +76,19 @@ export class UploadRecipeComponent implements OnInit {
 
   formInit() {
     this.uploadForm = this.fb.group({
-      title: [''],
-      description: [''],
-      instructions: [''],
-      mealType: [0],
-      difficulty: [0],
-      cookingTime: [0],
-      servings: [0],
+      title: ['', [Validators.required, Validators.maxLength(100)]],
+      description: ['', [Validators.required, Validators.maxLength(1000)]],
+      instructions: ['', [Validators.required, Validators.maxLength(3000)]],
+      mealType: [0, [Validators.required, this.notZeroValidator('mealType')]],
+      difficulty: [
+        0,
+        [Validators.required, this.notZeroValidator('difficulty')],
+      ],
+      cookingTime: [
+        0,
+        [Validators.required, this.notZeroValidator('cookingTime')],
+      ],
+      servings: [0, [Validators.required, this.notZeroValidator('servings')]],
       dietaryInfo: this.fb.group({
         glutenFree: [false],
         dairyFree: [false],
@@ -82,17 +96,61 @@ export class UploadRecipeComponent implements OnInit {
         vegan: [false],
       }),
       nutrition: this.fb.group({
-        calories: [0],
-        protein: [0],
-        carbohydrates: [0],
-        fat: [0],
-        fiber: [0],
+        calories: [
+          0,
+          [Validators.required, this.notZeroValidator('calories', 'nutrition')],
+        ],
+        protein: [
+          0,
+          [Validators.required, this.notZeroValidator('calories', 'nutrition')],
+        ],
+        carbohydrates: [
+          0,
+          [Validators.required, this.notZeroValidator('calories', 'nutrition')],
+        ],
+        fat: [
+          0,
+          [Validators.required, this.notZeroValidator('calories', 'nutrition')],
+        ],
+        fiber: [
+          0,
+          [Validators.required, this.notZeroValidator('calories', 'nutrition')],
+        ],
       }),
-      recipeImg: [null],
-      categories: this.fb.array([]),
-      cuisines: this.fb.array([]),
-      ingredients: this.fb.array([]),
+      recipeImg: [null, [Validators.required]],
+      categories: this.fb.array(
+        [],
+        [Validators.required, Validators.minLength(1), Validators.maxLength(5)]
+      ),
+      cuisines: this.fb.array(
+        [],
+        [Validators.required, Validators.minLength(1), Validators.maxLength(5)]
+      ),
+      ingredients: this.fb.array(
+        [],
+        [Validators.required, Validators.minLength(1), Validators.maxLength(20)]
+      ),
     });
+  }
+
+  private notZeroValidator(property: string, parentProperty?: string) {
+    return (control: AbstractControl) => {
+      let value;
+
+      if (parentProperty && control.root.get(parentProperty)) {
+        const parentControl = control.root.get(parentProperty) as FormGroup;
+
+        value = parentControl.get(property)?.value;
+      } else {
+        value = control.root.get(property)?.value;
+      }
+
+      if (value !== null && value !== undefined && value !== 0) {
+        return null;
+      } else {
+        return { notZero: true };
+      }
+    };
   }
 
   onImagePicked(event: Event) {
@@ -102,6 +160,11 @@ export class UploadRecipeComponent implements OnInit {
 
   onSubmitUpload() {
     console.log(this.uploadForm.value);
+
+    this.uploadForm.reset();
+    (<FormArray>this.uploadForm.get('categories')).clear();
+    (<FormArray>this.uploadForm.get('ingredients')).clear();
+    (<FormArray>this.uploadForm.get('cuisines')).clear();
   }
 
   get cusinesFormArray(): FormArray {
@@ -129,6 +192,20 @@ export class UploadRecipeComponent implements OnInit {
       });
       (<FormArray>this.uploadForm.get(formArray)).push(control);
     }
+
+    // this.uploadBtnDisabled = false;
+
+    this.checkFormArrays(this.uploadForm.value.categories);
+    this.checkFormArrays(this.uploadForm.value.cuisines);
+    this.checkFormArrays(this.uploadForm.value.ingredients);
+  }
+
+  private checkFormArrays(arr: number[]) {
+    arr.forEach((category: number) =>
+      +category === 0
+        ? (this.uploadBtnDisabled = true)
+        : (this.uploadBtnDisabled = false)
+    );
   }
 
   onRemoveControl(event: Event, formArray: string) {
