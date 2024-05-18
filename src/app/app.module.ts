@@ -14,9 +14,10 @@ import { ErrorModule } from './modules/error.module';
 import { HomeModule } from './modules/home.module';
 import { RecipesModule } from './modules/recipe.module';
 import { UserEngagementModule } from './modules/user-engagement.module';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, ScrollToTopComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
