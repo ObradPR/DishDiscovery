@@ -71,10 +71,8 @@ export class RecipeService {
       .get<IRecipeDto[]>('recipes.json')
       .pipe(
         map((recipes) =>
-          recipes.filter(
-            (recipe) =>
-              recipe.title.toLocaleLowerCase().includes(query) ||
-              recipe.description.toLocaleLowerCase().includes(query)
+          recipes.filter((recipe) =>
+            recipe.title.toLocaleLowerCase().includes(query)
           )
         )
       );

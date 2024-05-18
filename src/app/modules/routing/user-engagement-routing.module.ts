@@ -22,6 +22,10 @@ const routes: Routes = [
         canActivate: [authGuard],
       },
       {
+        path: 'profile/:id',
+        component: UserProfileComponent,
+      },
+      {
         path: 'search/:query',
         component: SearchResultsComponent,
       },

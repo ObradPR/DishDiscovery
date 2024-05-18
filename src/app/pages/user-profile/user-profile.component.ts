@@ -3,6 +3,7 @@ import { AuthService } from '../../services/auth.service';
 import { Subscription, switchMap } from 'rxjs';
 import { IUserDto } from '../../common/interfaces/user/user.interface';
 import { UserService } from '../../services/user.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user-profile',
@@ -12,15 +13,47 @@ import { UserService } from '../../services/user.service';
 export class UserProfileComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
   user: IUserDto | undefined;
-  loggedUserEmail: string = '';
+  searchedUserId: string | null = null;
+  isOwnProfile: boolean = false;
 
   constructor(
     private authService: AuthService,
-    private userService: UserService
+    private userService: UserService,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    this.getUserStats();
+    this.subscriptions.push(
+      this.route.paramMap.subscribe({
+        next: (params) => {
+          this.searchedUserId = params.get('id');
+          this.isOwnProfile = !this.searchedUserId;
+
+          if (this.isOwnProfile) {
+            this.getUserStats();
+          } else {
+            if (this.searchedUserId) {
+              this.userService
+                .getUserById(+this.searchedUserId)
+                .pipe(
+                  switchMap((data) => {
+                    this.user = data;
+                    return this.authService.getUserEmail();
+                  })
+                )
+                .subscribe({
+                  next: (email) => {
+                    if (email) {
+                      this.isOwnProfile =
+                        email === this.user?.email ? true : false;
+                    }
+                  },
+                });
+            }
+          }
+        },
+      })
+    );
   }
 
   getUserStats() {
@@ -29,7 +62,6 @@ export class UserProfileComponent implements OnInit, OnDestroy {
         .getUserEmail()
         .pipe(
           switchMap((email) => {
-            this.loggedUserEmail = email;
             return this.userService.getUserByEmail(email);
           })
         )
