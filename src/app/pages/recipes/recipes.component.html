@@ -1,11 +1,11 @@
 <section class="recipes section-pad-top">
   <h2 class="pt-5">Recipes</h2>
   <hr class="section-title" />
-  <div class="d-flex pt-5">
-    <div class="recipes-sidebar">
+  <div class="d-flex flex-lg-row flex-column pt-5">
+    <div class="col-lg-3 col-12">
       <app-filters></app-filters>
     </div>
-    <div style="width: 75%">
+    <div class="col-lg-9 col-12">
       <div class="recipes-content">
         <!-- ovde idu recepti -->
         @if(recipes.length > 0) { @for (recipe of recipes; track $index) {

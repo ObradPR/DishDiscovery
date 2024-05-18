@@ -1,25 +1,25 @@
 <div
-  class="our-stats bg-secondary d-flex justify-content-center align-items-center text-center"
+  class="our-stats bg-secondary d-flex flex-wrap col-12 justify-content-center align-items-center text-center"
 >
   @if (stats$ | async; as stats) {
-  <div class="stat-block">
+  <div class="col-6 col-lg-3">
     <h3 class="fst-italic">Total Recipes</h3>
     <p class="fs-3 fst-italic">{{ stats.total_recipes }}</p>
   </div>
-  <div class="stat-block">
+  <div class="col-6 col-lg-3">
     <h3 class="fst-italic">Total Users</h3>
     <p class="fs-3 fst-italic">{{ stats.total_users }}</p>
   </div>
-  <div class="stat-block">
+  <div class="col-6 col-lg-3">
     <h3 class="fst-italic">Active Users</h3>
     <p class="fs-3 fst-italic">{{ stats.active_users }}</p>
   </div>
-  <div class="stat-block">
+  <div class="col-6 col-lg-3">
     <h3 class="fst-italic">New Recipes Last Week</h3>
     <p class="fs-3 fst-italic">{{ stats.new_recipes_last_week }}</p>
   </div>
   } @else {
-  <div class="stat-block">
+  <div class="col-6 col-lg-3">
     <h3>There was an error trying to get data!</h3>
     <p>We are sorry! 😢</p>
   </div>

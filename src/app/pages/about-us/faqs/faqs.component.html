@@ -1,7 +1,7 @@
 <section class="section-pad-top pb-0" id="faqs">
-  <div class="faqs-top"></div>
+  <div class="faqs-top col-12"></div>
   <div class="faqs-bottom">
-    <div class="faqs-wrapper mx-auto">
+    <div class="faqs-wrapper col-11 col-md-10 col-lg-8 col-xl-6 mx-auto">
       @for (faq of (faqs$ | async); track faq.id; let i = $index) {
       <div class="faq-row hidden-el hidden-scale-in">
         <div

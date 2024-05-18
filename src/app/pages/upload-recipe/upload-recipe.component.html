@@ -1,8 +1,8 @@
 <section class="upload-recipe section-pad-top container">
   <h2 class="pt-5">Upload your <span class="green-text">recipe</span></h2>
   <hr class="section-title" />
-  <div class="upload-recipe-bottom pt-5 d-flex">
-    <div class="upload-info">
+  <div class="col-12 pt-5 d-flex flex-column flex-lg-row">
+    <div class="col-12 col-lg-6 pb-4">
       <ul>
         <li><strong>Title:</strong> Enter the title of your recipe.</li>
         <li>
@@ -81,7 +81,7 @@
         </li>
       </ul>
     </div>
-    <div class="upload-form">
+    <div class="col-12 col-lg-6">
       <form [formGroup]="uploadForm" (ngSubmit)="onSubmitUpload()">
         <div class="form-floating">
           <input
@@ -435,18 +435,16 @@
             </div>
           </div>
           }
-          <div class="d-flex justify-content-start">
+          <div class="d-flex justify-content-between justify-content-md-start">
             <button
-              class="btn btn-primary mt-2"
+              class="ingredient-btns btn btn-primary mt-2"
               (click)="onAddControl($event, 'ingredients')"
-              style="width: 24%"
             >
               Add
             </button>
             <button
-              class="btn btn-secondary mt-2 ms-2"
+              class="ingredient-btns btn btn-secondary mt-2 ms-2"
               (click)="onRemoveControl($event, 'ingredients')"
-              style="width: 24%"
             >
               Remove
             </button>

@@ -42,3 +42,22 @@ tbody td {
 .rating-5 {
   color: #06a800;
 }
+
+@media (max-width: 1200px) {
+  .ratings {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .img-holder {
+    width: 100%;
+  }
+  .img-holder img {
+    width: 100%;
+  }
+
+  .ratings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

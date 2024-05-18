@@ -1,15 +1,13 @@
-.upload-recipe-bottom {
-  width: 100%;
-}
-
-.upload-info {
-  width: 50%;
-}
-
-.upload-form {
-  width: 50%;
-}
-
 li {
   margin-top: 1rem;
+}
+
+.ingredient-btns {
+  width: 24%;
+}
+
+@media (max-width: 768px) {
+  .ingredient-btns {
+    width: 48.2%;
+  }
 }

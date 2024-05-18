@@ -39,3 +39,52 @@
 .about-us-info-right h3 {
   font-size: 1.6em;
 }
+
+@media (max-width: 1826px) {
+  .about-us-cover h2 {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1599px) {
+  .about-us-cover h2 {
+    width: 65%;
+  }
+
+  .about-us-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1352px) {
+  .about-us-cover h2 {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .about-us-cover h2 {
+    width: 85%;
+  }
+  .about-us-wrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1035px) {
+  .about-us-cover h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us-img-holder {
+    display: none;
+  }
+
+  .about-us-info-right {
+    width: 100%;
+  }
+}

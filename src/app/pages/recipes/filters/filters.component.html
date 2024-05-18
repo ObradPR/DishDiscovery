@@ -1,7 +1,9 @@
-<div class="filters-holder px-5">
+<div
+  class="filters-holder d-flex flex-lg-column flex-row flex-wrap px-5 col-12 justify-content-between"
+>
   <div class="filter-block">
     <div
-      class="filter-block-row d-flex justify-content-between align-items-center"
+      class="filter-block-row col-12 d-flex justify-content-between align-items-center"
     >
       <h6>Categories</h6>
     </div>
@@ -9,7 +11,7 @@
       @if(categories.length > 0){ @for (category of categoriesInfo; track
       category; let i = $index) {
       <div
-        class="filter-block-row d-flex justify-content-between align-items-center"
+        class="filter-block-row col-12 d-flex justify-content-between align-items-center"
       >
         <div>
           <input
@@ -32,7 +34,7 @@
   <hr />
   <div class="filter-block">
     <div
-      class="filter-block-row d-flex justify-content-between align-items-center"
+      class="filter-block-row col-12 d-flex justify-content-between align-items-center"
     >
       <h6>Cuisines</h6>
     </div>
@@ -40,7 +42,7 @@
       @if(cuisines.length > 0){ @for (cuisine of cuisinesInfo; track cuisine;
       let i = $index) {
       <div
-        class="filter-block-row d-flex justify-content-between align-items-center"
+        class="filter-block-row col-12 d-flex justify-content-between align-items-center"
       >
         <div>
           <input
@@ -63,7 +65,7 @@
   <hr />
   <div class="filter-block">
     <div
-      class="filter-block-row d-flex justify-content-between align-items-center"
+      class="filter-block-row col-12 d-flex justify-content-between align-items-center"
     >
       <h6>Cooking Times</h6>
     </div>
@@ -71,7 +73,7 @@
       @if(cookingTimes.length > 0){ @for (cookingTime of cookingTimesInfo; track
       cookingTime; let i = $index) {
       <div
-        class="filter-block-row d-flex justify-content-between align-items-center"
+        class="filter-block-row col-12 d-flex justify-content-between align-items-center"
       >
         <div>
           <input
@@ -91,7 +93,7 @@
   <hr />
   <div class="filter-block">
     <div
-      class="filter-block-row d-flex justify-content-between align-items-center"
+      class="filter-block-row col-12 d-flex justify-content-between align-items-center"
     >
       <h6>Difficulty Cookings</h6>
     </div>
@@ -99,7 +101,7 @@
       @if(difficultyCookings.length > 0){ @for (dc of difficultyCookingsInfo;
       track dc; let i = $index) {
       <div
-        class="filter-block-row d-flex justify-content-between align-items-center"
+        class="filter-block-row col-12 d-flex justify-content-between align-items-center"
       >
         <div>
           <input
@@ -119,7 +121,7 @@
   <hr />
   <div class="filter-block">
     <div
-      class="filter-block-row filter-header d-flex justify-content-between align-items-center active"
+      class="filter-block-row col-12 filter-header d-flex justify-content-between align-items-center active"
     >
       <h6>Meal Types</h6>
     </div>
@@ -127,7 +129,7 @@
       @if(mealTypes.length > 0){ @for (type of mealTypesInfo; track type; let i
       = $index) {
       <div
-        class="filter-block-row d-flex justify-content-between align-items-center"
+        class="filter-block-row col-12 d-flex justify-content-between align-items-center"
       >
         <div>
           <input
