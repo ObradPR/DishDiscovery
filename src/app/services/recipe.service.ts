@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, map } from 'rxjs';
+import { BehaviorSubject, Observable, filter, map } from 'rxjs';
 
 import { DataService } from './data.service';
 import { IRecipeDto } from '../common/interfaces/recipe/recipe.interface';
@@ -54,5 +54,13 @@ export class RecipeService {
 
   getAllRecipes(): Observable<IRecipeDto[]> {
     return this.dataService.get('recipes.json');
+  }
+
+  getRecipeById(id: number): Observable<IRecipeDto | null> {
+    return this.dataService
+      .get<IRecipeDto[]>('recipes.json')
+      .pipe(
+        map((recipes) => recipes.find((recipe) => recipe.id === +id) || null)
+      );
   }
 }

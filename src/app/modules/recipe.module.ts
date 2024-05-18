@@ -6,7 +6,7 @@ import { RecipesRoutingModule } from './routing/recipes.routing.module';
 import { SharedModule } from '../modules/shared.module';
 
 @NgModule({
-  declarations: [recipes.FiltersComponent, recipes.RecipesComponent],
+  declarations: [recipes.FiltersComponent, recipes.RecipesComponent, recipes.SingleRecipeComponent],
   imports: [CommonModule, RecipesRoutingModule, SharedModule],
 })
 export class RecipesModule {}

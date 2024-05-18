@@ -28,7 +28,7 @@ import { RecipesModule } from './modules/recipe.module';
     UserEngagementModule,
     AuthModule,
     ErrorModule,
-    RecipesModule
+    RecipesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

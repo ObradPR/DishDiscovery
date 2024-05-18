@@ -1,0 +1,44 @@
+.top-info,
+.bottom-info {
+  width: 100%;
+}
+
+.img-holder {
+  width: 45%;
+}
+
+.img-holder img {
+  width: 60%;
+}
+
+tbody td {
+  text-align: end;
+}
+
+.ratings {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.rating-block {
+  width: 100%;
+}
+
+.rating-1 {
+  color: #9a0000;
+}
+.rating-2 {
+  color: #b88d00;
+}
+.rating-3 {
+  color: #7da300;
+}
+.rating-4 {
+  color: #5cc500;
+}
+.rating-5 {
+  color: #06a800;
+}
