@@ -8,6 +8,8 @@ import { CategoryService } from '../../../services/category.service';
 import { IMealTypeDto } from '../../../common/interfaces/category/meal-type.interface';
 import { ICuisineDto } from '../../../common/interfaces/category/cuisine.interface';
 import { ICategoryDto } from '../../../common/interfaces/category/category.interface';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../../../services/auth.service';
 
 @Component({
   selector: 'app-single-recipe',
@@ -21,14 +23,20 @@ export class SingleRecipeComponent implements OnInit {
   mealType: IMealTypeDto | undefined;
   cuisines: ICuisineDto[] = [];
   categories: ICategoryDto[] = [];
+  rateForm: FormGroup = this.fb.group({});
+  isLogged: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
     private userService: UserService,
-    private categoryService: CategoryService
+    private categoryService: CategoryService,
+    private fb: FormBuilder,
+    public authService: AuthService
   ) {}
 
   ngOnInit(): void {
+    this.formInit();
+
     this.subscriptions.push(
       this.route.data.subscribe({
         next: (data) => {
@@ -38,6 +46,20 @@ export class SingleRecipeComponent implements OnInit {
         },
       })
     );
+  }
+
+  formInit() {
+    this.rateForm = this.fb.group({
+      rating: [0, [Validators.required, Validators.maxLength(1)]],
+      content: ['', [Validators.required]],
+    });
+  }
+
+  onRateRecipe() {
+    if (this.rateForm.invalid) return;
+
+    this.rateForm.reset();
+    console.log('Successfully rated!');
   }
 
   getRecipeInfo() {
